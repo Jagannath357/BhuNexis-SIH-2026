@@ -4,6 +4,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-001",
     documentId: "DOC-1001",
+    citizenId: "CIT001",
     ownerName: "Ramesh Chandra Patnaik",
     fatherName: "Mohan Chandra Patnaik",
     surveyNumber: "125/3",
@@ -37,6 +38,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-002",
     documentId: "DOC-1002",
+    citizenId: "CIT002",
     ownerName: "Sanjay Kumar Swain",
     fatherName: "Bichitrananda Swain",
     surveyNumber: "118/2",
@@ -70,8 +72,9 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-003",
     documentId: "DOC-1003",
-    ownerName: "Meena Devi Das",
-    fatherName: "Late Nityananda Das",
+    citizenId: "CIT004",
+    ownerName: "Anusaya Mohanty",
+    fatherName: "Late Nityananda Mohanty",
     surveyNumber: "203/7",
     khataNumber: "112",
     khasraNumber: "203/7-C",
@@ -86,7 +89,7 @@ export const INITIAL_LAND_RECORDS = [
     verificationStatus: "LOW CONFIDENCE",
     overallConfidence: 64.8,
     extractedFields: {
-      ownerName: { value: "Meena Devi Das", confidence: 62, edited: false },
+      ownerName: { value: "Anusaya Mohanty", confidence: 62, edited: false },
       surveyNumber: { value: "203/7", confidence: 58, edited: false },
       khataNumber: { value: "112", confidence: 71, edited: false },
       area: { value: "3.14 Acres", confidence: 65, edited: false },
@@ -103,8 +106,9 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-004",
     documentId: "DOC-1004",
-    ownerName: "Pradeep Kumar Sahoo",
-    fatherName: "Gangadhar Sahoo",
+    citizenId: "CIT001",
+    ownerName: "Ramesh Chandra Patnaik",
+    fatherName: "Gangadhar Patnaik",
     surveyNumber: "89/1",
     khataNumber: "45",
     khasraNumber: "89/1-A",
@@ -119,7 +123,7 @@ export const INITIAL_LAND_RECORDS = [
     verificationStatus: "CONFLICT",
     overallConfidence: 86.4,
     extractedFields: {
-      ownerName: { value: "Pradeep Kumar Sahoo", confidence: 95, edited: false },
+      ownerName: { value: "Ramesh Chandra Patnaik", confidence: 95, edited: false },
       surveyNumber: { value: "89/1", confidence: 91, edited: false },
       khataNumber: { value: "45", confidence: 89, edited: false },
       area: { value: "0.95 Acres", confidence: 82, edited: false },
@@ -136,6 +140,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-005",
     documentId: "DOC-1005",
+    citizenId: "CIT004",
     ownerName: "Anusaya Mohanty",
     fatherName: "Kailash Chandra Mohanty",
     surveyNumber: "142/4",
@@ -169,6 +174,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-006",
     documentId: "DOC-1006",
+    citizenId: "CIT004",
     ownerName: "Subhashree Jena",
     fatherName: "Bibhuti Jena",
     surveyNumber: "76/3",
@@ -202,6 +208,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-007",
     documentId: "DOC-1007",
+    citizenId: "CIT005",
     ownerName: "Debasis Tripathy",
     fatherName: "Jagannath Tripathy",
     surveyNumber: "310/1",
@@ -235,6 +242,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-008",
     documentId: "DOC-1008",
+    citizenId: "CIT005",
     ownerName: "Manoj Kumar Behera",
     fatherName: "Sadashiv Behera",
     surveyNumber: "55/9",
@@ -268,6 +276,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-009",
     documentId: "DOC-1009",
+    citizenId: "CIT005",
     ownerName: "Kusum Lata Pradhan",
     fatherName: "Bishnu Charan Pradhan",
     surveyNumber: "198/5",
@@ -301,6 +310,7 @@ export const INITIAL_LAND_RECORDS = [
   {
     id: "LR-2026-010",
     documentId: "DOC-1010",
+    citizenId: "CIT005",
     ownerName: "Binod Bihari Mahapatra",
     fatherName: "Late Nanda Mahapatra",
     surveyNumber: "220/2",

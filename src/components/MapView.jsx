@@ -27,11 +27,17 @@ function MapController({ selectedParcel }) {
   return null;
 }
 
-export function MapView({ height = "h-[600px]", role = "CITIZEN" }) {
-  const [parcelsGeoJson, setParcelsGeoJson] = useState(DEMO_MAP_PARCELS);
+export function MapView({ height = "h-[600px]", role = "CITIZEN", customGeoJson = null }) {
+  const [parcelsGeoJson, setParcelsGeoJson] = useState(customGeoJson || DEMO_MAP_PARCELS);
   const [selectedParcel, setSelectedParcel] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [tileError, setTileError] = useState(false);
+
+  useEffect(() => {
+    if (customGeoJson) {
+      setParcelsGeoJson(customGeoJson);
+    }
+  }, [customGeoJson]);
 
   // Odisha Demo Center: Jatni, Khordha (20.1824° N, 85.7356° E)
   const centerPosition = [20.1824, 85.7356];

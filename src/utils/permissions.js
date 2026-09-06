@@ -51,3 +51,22 @@ export function getDefaultDashboardForRole(role) {
       return "/login";
   }
 }
+
+export function getLandRecordsForUser(records = [], user) {
+  if (!user) return [];
+  if (user.role === ROLES.CITIZEN) {
+    const targetCitizenId = user.citizenId || user.id;
+    return records.filter(record => record.citizenId === targetCitizenId);
+  }
+  return records;
+}
+
+export function canUserAccessRecord(record, user) {
+  if (!user || !record) return false;
+  if (user.role === ROLES.CITIZEN) {
+    const targetCitizenId = user.citizenId || user.id;
+    return record.citizenId === targetCitizenId;
+  }
+  return true;
+}
+

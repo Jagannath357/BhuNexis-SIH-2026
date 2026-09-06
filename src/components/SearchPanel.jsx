@@ -23,16 +23,16 @@ export function SearchPanel({ onSearch, onReset }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
-      <div className="flex items-center justify-between mb-4 border-b border-slate-100 pb-3">
-        <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
-          <Search className="w-4 h-4 text-sky-600" />
+    <form onSubmit={handleSubmit} className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-5 transition-colors">
+      <div className="flex items-center justify-between mb-4 border-b border-slate-100 dark:border-slate-800 pb-3">
+        <h4 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
+          <Search className="w-4 h-4 text-sky-600 dark:text-sky-400" />
           <span>Multi-Criteria Land Record Search</span>
         </h4>
         <button
           type="button"
           onClick={handleReset}
-          className="text-xs text-slate-500 hover:text-slate-800 flex items-center gap-1 font-medium"
+          className="text-xs text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white flex items-center gap-1 font-medium"
         >
           <RefreshCw className="w-3.5 h-3.5" />
           <span>Reset Search</span>
@@ -41,44 +41,44 @@ export function SearchPanel({ onSearch, onReset }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs">
         <div>
-          <label className="block text-[11px] font-semibold text-slate-500 mb-1">Survey Number</label>
+          <label className="block text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1">Survey Number</label>
           <input
             type="text"
             placeholder="e.g. 125/3"
             value={surveyNo}
             onChange={(e) => setSurveyNo(e.target.value)}
-            className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
+            className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-2 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-sky-500"
           />
         </div>
 
         <div>
-          <label className="block text-[11px] font-semibold text-slate-500 mb-1">Khata Number</label>
+          <label className="block text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1">Khata Number</label>
           <input
             type="text"
             placeholder="e.g. 87"
             value={khataNo}
             onChange={(e) => setKhataNo(e.target.value)}
-            className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
+            className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-2 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-sky-500"
           />
         </div>
 
         <div>
-          <label className="block text-[11px] font-semibold text-slate-500 mb-1">Owner Name</label>
+          <label className="block text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1">Owner Name</label>
           <input
             type="text"
             placeholder="e.g. Ramesh Chandra"
             value={ownerName}
             onChange={(e) => setOwnerName(e.target.value)}
-            className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
+            className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-2 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-sky-500"
           />
         </div>
 
         <div>
-          <label className="block text-[11px] font-semibold text-slate-500 mb-1">Mouza / Village</label>
+          <label className="block text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1">Mouza / Village</label>
           <select
             value={village}
             onChange={(e) => setVillage(e.target.value)}
-            className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
+            className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500"
           >
             <option value="">All Mouzas (Khordha)</option>
             <option value="BhuNexis Demo Village">BhuNexis Demo Village</option>
@@ -89,11 +89,11 @@ export function SearchPanel({ onSearch, onReset }) {
         </div>
 
         <div>
-          <label className="block text-[11px] font-semibold text-slate-500 mb-1">Verification Status</label>
+          <label className="block text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1">Verification Status</label>
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
-            className="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
+            className="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg p-2 text-xs text-slate-900 dark:text-slate-100 focus:outline-none focus:border-sky-500"
           >
             <option value="ALL">All Statuses</option>
             <option value="VERIFIED">Verified</option>
