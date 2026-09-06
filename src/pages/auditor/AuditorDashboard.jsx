@@ -23,21 +23,21 @@ export function AuditorDashboard() {
     <DashboardLayout>
       <div className="space-y-6">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
           <div>
-            <span className="text-[10px] font-extrabold uppercase tracking-widest text-rose-700 bg-rose-100 px-2.5 py-0.5 rounded border border-rose-200">
+            <span className="text-[10px] font-extrabold uppercase tracking-widest text-rose-700 dark:text-rose-300 bg-rose-100 dark:bg-rose-950/80 px-2.5 py-0.5 rounded border border-rose-200 dark:border-rose-800">
               Independent Compliance
             </span>
-            <h1 className="text-2xl font-extrabold text-slate-900 tracking-tight mt-1">
+            <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight mt-1">
               Compliance & Audit Inspection
             </h1>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               Independent inspection of processing throughput, verification integrity, and system audit history.
             </p>
           </div>
 
-          <div className="px-3.5 py-1.5 bg-rose-50 text-rose-800 border border-rose-200 rounded-xl font-extrabold text-xs flex items-center gap-1.5 shadow-sm">
-            <Lock className="w-4 h-4 text-rose-600" />
+          <div className="px-3.5 py-1.5 bg-rose-50 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800 rounded-xl font-extrabold text-xs flex items-center gap-1.5 shadow-sm">
+            <Lock className="w-4 h-4 text-rose-600 dark:text-rose-400" />
             <span>Strictly Read-Only Inspection Mode</span>
           </div>
         </div>
@@ -53,18 +53,18 @@ export function AuditorDashboard() {
         </div>
 
         {/* Throughput & Error Rate Chart */}
-        <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
-          <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4">
+        <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
+          <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">
             Daily Processing Throughput vs System Error Rate
           </h3>
           <div className="h-64">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={throughputData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
+                <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
                 <XAxis dataKey="date" stroke="#64748B" fontSize={11} />
                 <YAxis yAxisId="left" stroke="#0284C7" fontSize={11} />
                 <YAxis yAxisId="right" orientation="right" stroke="#E11D48" fontSize={11} />
-                <Tooltip />
+                <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155', color: '#fff', borderRadius: '0.5rem', fontSize: '12px' }} />
                 <Line yAxisId="left" type="monotone" dataKey="throughput" stroke="#0284C7" strokeWidth={2.5} name="Throughput (records/day)" />
                 <Line yAxisId="right" type="monotone" dataKey="errorRate" stroke="#E11D48" strokeWidth={2.5} name="Error Rate (%)" />
               </LineChart>

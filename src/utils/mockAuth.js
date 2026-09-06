@@ -5,8 +5,7 @@ export function authenticateUser(email, password, role) {
   
   const foundUser = MOCK_USERS.find(user => 
     user.email.toLowerCase() === normalizedEmail &&
-    user.password === password &&
-    user.role === role
+    user.password === password
   );
 
   if (foundUser) {
@@ -17,6 +16,7 @@ export function authenticateUser(email, password, role) {
 
   return { 
     success: false, 
-    error: "Invalid credentials or role selection. Please check demo credentials on the login screen." 
+    error: "Invalid email or password. Please check your credentials." 
   };
 }
+

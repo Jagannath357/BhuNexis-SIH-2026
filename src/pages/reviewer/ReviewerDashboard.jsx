@@ -19,15 +19,15 @@ export function ReviewerDashboard() {
     <DashboardLayout>
       <div className="space-y-6">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
           <div>
-            <span className="text-[10px] font-extrabold uppercase tracking-widest text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded border border-amber-200">
+            <span className="text-[10px] font-extrabold uppercase tracking-widest text-amber-700 dark:text-amber-300 bg-amber-100 dark:bg-amber-950/80 px-2.5 py-0.5 rounded border border-amber-200 dark:border-amber-800">
               Human-in-the-Loop Verification
             </span>
-            <h1 className="text-2xl font-extrabold text-slate-900 tracking-tight mt-1">
+            <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight mt-1">
               Human Verification Center
             </h1>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-slate-500 dark:text-slate-400">
               Resolve low-confidence character extractions, review boundary conflicts, and certify validated land information.
             </p>
           </div>
@@ -54,10 +54,10 @@ export function ReviewerDashboard() {
         {/* Priority Review Queue Table */}
         <div className="space-y-3">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider">
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider">
               Priority Human Review Queue
             </h3>
-            <span className="text-xs text-amber-700 font-semibold bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200">
+            <span className="text-xs text-amber-700 dark:text-amber-300 font-semibold bg-amber-50 dark:bg-amber-950/60 px-2.5 py-0.5 rounded border border-amber-200 dark:border-amber-800">
               {reviewPendingRecords.length} Pending Records
             </span>
           </div>

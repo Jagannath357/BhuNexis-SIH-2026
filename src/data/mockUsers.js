@@ -1,4 +1,4 @@
-// DEMO CREDENTIALS ONLY — BhuNexis SIH 2026 Prototype
+// DEMO CREDENTIALS ONLY — BhuNexis Platform
 // Do NOT use in production environments.
 
 export const MOCK_USERS = [
@@ -14,7 +14,8 @@ export const MOCK_USERS = [
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200",
     status: "ACTIVE",
     lastLogin: "2026-09-04 10:15 AM",
-    permissions: ["all"]
+    permissions: ["all"],
+    citizenId: null
   },
   {
     id: "USR-OFF-002",
@@ -28,7 +29,8 @@ export const MOCK_USERS = [
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
     status: "ACTIVE",
     lastLogin: "2026-09-04 09:45 AM",
-    permissions: ["ingestion", "upload", "view"]
+    permissions: ["ingestion", "upload", "view"],
+    citizenId: null
   },
   {
     id: "USR-REV-003",
@@ -42,7 +44,8 @@ export const MOCK_USERS = [
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200",
     status: "ACTIVE",
     lastLogin: "2026-09-04 11:00 AM",
-    permissions: ["review", "edit_extraction", "approve", "reject", "flag_conflict"]
+    permissions: ["review", "edit_extraction", "approve", "reject", "flag_conflict"],
+    citizenId: null
   },
   {
     id: "USR-AUD-004",
@@ -56,7 +59,8 @@ export const MOCK_USERS = [
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
     status: "ACTIVE",
     lastLogin: "2026-09-04 08:30 AM",
-    permissions: ["read_only_audit", "compliance_view"]
+    permissions: ["read_only_audit", "compliance_view"],
+    citizenId: null
   },
   {
     id: "USR-CIT-005",
@@ -70,6 +74,52 @@ export const MOCK_USERS = [
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200",
     status: "ACTIVE",
     lastLogin: "2026-09-04 11:20 AM",
-    permissions: ["search", "view_verified", "download_copy", "submit_grievance"]
+    permissions: ["search", "view_verified", "download_copy", "submit_grievance"],
+    citizenId: "CIT001"
+  },
+  {
+    id: "USR-CIT-002",
+    name: "Sanjay Kumar Swain",
+    email: "citizen2@bhoomiai.demo",
+    password: "Citizen@123",
+    role: "CITIZEN",
+    roleDisplayName: "Landowner / Citizen",
+    department: "Public Land Portal User",
+    phone: "+91 98765 22334",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
+    status: "ACTIVE",
+    lastLogin: "2026-09-05 02:15 PM",
+    permissions: ["search", "view_verified", "download_copy", "submit_grievance"],
+    citizenId: "CIT002"
+  },
+  {
+    id: "USR-CIT-003",
+    name: "Prakash Chandra Das",
+    email: "citizen3@bhoomiai.demo",
+    password: "Citizen@123",
+    role: "CITIZEN",
+    roleDisplayName: "Landowner / Citizen",
+    department: "Public Land Portal User",
+    phone: "+91 98765 33445",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+    status: "ACTIVE",
+    lastLogin: "2026-09-06 09:10 AM",
+    permissions: ["search", "view_verified", "download_copy", "submit_grievance"],
+    citizenId: "CIT003"
+  },
+  {
+    id: "USR-CIT-004",
+    name: "Anusaya Mohanty",
+    email: "citizen4@bhoomiai.demo",
+    password: "Citizen@123",
+    role: "CITIZEN",
+    roleDisplayName: "Landowner / Citizen",
+    department: "Public Land Portal User",
+    phone: "+91 98765 44556",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200",
+    status: "ACTIVE",
+    lastLogin: "2026-09-06 10:30 AM",
+    permissions: ["search", "view_verified", "download_copy", "submit_grievance"],
+    citizenId: "CIT004"
   }
 ];

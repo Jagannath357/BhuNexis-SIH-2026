@@ -9,6 +9,7 @@ export const DEMO_MAP_PARCELS = {
       properties: {
         parcelId: "PARCEL-101",
         recordId: "LR-2026-001",
+        citizenId: "CIT001",
         surveyNumber: "125/3",
         khataNumber: "87",
         ownerName: "Ramesh Chandra Patnaik",
@@ -38,6 +39,7 @@ export const DEMO_MAP_PARCELS = {
       properties: {
         parcelId: "PARCEL-102",
         recordId: "LR-2026-002",
+        citizenId: "CIT002",
         surveyNumber: "118/2",
         khataNumber: "64",
         ownerName: "Sanjay Kumar Swain",
@@ -67,9 +69,10 @@ export const DEMO_MAP_PARCELS = {
       properties: {
         parcelId: "PARCEL-103",
         recordId: "LR-2026-003",
+        citizenId: "CIT004",
         surveyNumber: "203/7",
         khataNumber: "112",
-        ownerName: "Meena Devi Das",
+        ownerName: "Anusaya Mohanty",
         area: "3.14 Acres",
         village: "Haripur Mouza",
         tehsil: "Jatni",
@@ -96,9 +99,10 @@ export const DEMO_MAP_PARCELS = {
       properties: {
         parcelId: "PARCEL-104",
         recordId: "LR-2026-004",
+        citizenId: "CIT001",
         surveyNumber: "89/1",
         khataNumber: "45",
-        ownerName: "Pradeep Kumar Sahoo",
+        ownerName: "Ramesh Chandra Patnaik",
         area: "0.95 Acres",
         village: "BhuNexis Demo Village",
         tehsil: "Jatni",
@@ -125,6 +129,7 @@ export const DEMO_MAP_PARCELS = {
       properties: {
         parcelId: "PARCEL-105",
         recordId: "LR-2026-005",
+        citizenId: "CIT004",
         surveyNumber: "142/4",
         khataNumber: "105",
         ownerName: "Anusaya Mohanty",
@@ -154,6 +159,7 @@ export const DEMO_MAP_PARCELS = {
       properties: {
         parcelId: "PARCEL-106",
         recordId: "LR-2026-006",
+        citizenId: "CIT004",
         surveyNumber: "76/3",
         khataNumber: "32",
         ownerName: "Subhashree Jena",
@@ -183,6 +189,7 @@ export const DEMO_MAP_PARCELS = {
       properties: {
         parcelId: "PARCEL-107",
         recordId: "LR-2026-007",
+        citizenId: "CIT005",
         surveyNumber: "310/1",
         khataNumber: "158",
         ownerName: "Debasis Tripathy",

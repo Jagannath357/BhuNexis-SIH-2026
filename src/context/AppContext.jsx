@@ -11,7 +11,19 @@ export function AppProvider({ children }) {
   const [records, setRecords] = useState(() => {
     try {
       const saved = localStorage.getItem('bhunexis_land_records');
-      return saved ? JSON.parse(saved) : INITIAL_LAND_RECORDS;
+      if (!saved) return INITIAL_LAND_RECORDS;
+      const parsed = JSON.parse(saved);
+      return parsed.map(rec => {
+        const initMatch = INITIAL_LAND_RECORDS.find(i => i.id === rec.id);
+        if (initMatch) {
+          return { 
+            ...rec, 
+            citizenId: initMatch.citizenId,
+            ownerName: initMatch.ownerName 
+          };
+        }
+        return rec;
+      });
     } catch {
       return INITIAL_LAND_RECORDS;
     }
@@ -31,7 +43,12 @@ export function AppProvider({ children }) {
   const [userList, setUserList] = useState(() => {
     try {
       const saved = localStorage.getItem('bhunexis_user_list');
-      return saved ? JSON.parse(saved) : MOCK_USERS;
+      if (!saved) return MOCK_USERS;
+      const parsed = JSON.parse(saved);
+      if (!parsed.some(u => u.email === 'citizen3@bhoomiai.demo')) {
+        return MOCK_USERS;
+      }
+      return parsed;
     } catch {
       return MOCK_USERS;
     }

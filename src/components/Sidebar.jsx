@@ -38,7 +38,7 @@ export function Sidebar({ isOpen, onClose }) {
       case 'OFFICER':
         return [
           { to: '/o/dashboard', label: 'Ingestion Dashboard', icon: LayoutDashboard },
-          { to: '/o/upload', label: 'Upload Land Record', icon: UploadCloud },
+          { to: '/o/upload', label: 'Upload & Process', icon: UploadCloud },
           { to: '/o/map', label: 'Cadastral GIS View', icon: MapPin },
           { to: '/o/profile', label: 'Officer Profile', icon: User }
         ];
@@ -85,28 +85,28 @@ export function Sidebar({ isOpen, onClose }) {
       {/* Sidebar Panel */}
       <aside className={`
         fixed lg:static top-[57px] bottom-0 left-0 z-40
-        w-64 bg-slate-900 text-slate-300 border-r border-slate-800
-        flex flex-col justify-between transition-transform duration-300 ease-in-out
+        w-64 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-r border-slate-200 dark:border-slate-800
+        flex flex-col justify-between transition-all duration-200 ease-in-out
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         {/* Upper Menu List */}
         <div className="p-4 space-y-6 overflow-y-auto flex-1">
           {/* User Status Card */}
-          <div className="bg-slate-800/80 rounded-xl p-3.5 border border-slate-700/60 shadow-inner">
+          <div className="bg-slate-50 dark:bg-slate-800/80 rounded-xl p-3.5 border border-slate-200 dark:border-slate-700/60 shadow-sm">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-bold shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-600 dark:text-sky-400 font-bold shrink-0">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <div className="overflow-hidden">
-                <div className="text-xs font-bold text-white truncate">{user.roleDisplayName}</div>
-                <div className="text-[10px] text-sky-400 font-semibold uppercase tracking-wider">{user.role} ACCESS</div>
+                <div className="text-xs font-bold text-slate-900 dark:text-white truncate">{user.roleDisplayName}</div>
+                <div className="text-[10px] text-sky-600 dark:text-sky-400 font-semibold uppercase tracking-wider">{user.role} ACCESS</div>
               </div>
             </div>
           </div>
 
           {/* Navigation Links */}
           <nav className="space-y-1">
-            <p className="px-3 text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">
+            <p className="px-3 text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2">
               Navigation Menu
             </p>
             {navLinks.map((link) => {
@@ -119,8 +119,8 @@ export function Sidebar({ isOpen, onClose }) {
                   className={({ isActive }) => `
                     flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs font-medium transition-all
                     ${isActive 
-                      ? 'bg-sky-600 text-white shadow-md shadow-sky-600/30 font-semibold' 
-                      : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/60'
+                      ? 'bg-sky-600 text-white shadow-md shadow-sky-600/20 font-semibold' 
+                      : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800/60'
                     }
                   `}
                 >
@@ -129,7 +129,7 @@ export function Sidebar({ isOpen, onClose }) {
                     <span>{link.label}</span>
                   </div>
                   {link.badge && (
-                    <span className="px-1.5 py-0.5 text-[9px] font-bold bg-amber-500/20 text-amber-300 rounded border border-amber-500/30 animate-pulse">
+                    <span className="px-1.5 py-0.5 text-[9px] font-bold bg-amber-500/20 text-amber-600 dark:text-amber-300 rounded border border-amber-500/30 animate-pulse">
                       {link.badge}
                     </span>
                   )}
@@ -140,13 +140,13 @@ export function Sidebar({ isOpen, onClose }) {
         </div>
 
         {/* Lower Info Footer */}
-        <div className="p-4 border-t border-slate-800/80 bg-slate-950/40 text-[11px] text-slate-500 space-y-2">
-          <div className="flex items-center gap-2 text-slate-400">
-            <Building className="w-3.5 h-3.5 text-sky-400" />
-            <span className="font-semibold text-slate-300">Odisha Demo Portal</span>
+        <div className="p-4 border-t border-slate-200 dark:border-slate-800/80 bg-slate-50/60 dark:bg-slate-950/40 text-[11px] text-slate-500 dark:text-slate-400 space-y-1.5">
+          <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
+            <Building className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
+            <span className="font-semibold text-slate-900 dark:text-slate-200">Odisha Demo Portal</span>
           </div>
-          <p className="text-[10px] text-slate-500 leading-tight">
-            Khordha District • Tehsil Jatni • SIH26018 Prototype
+          <p className="text-[10px] text-slate-500 dark:text-slate-500 leading-tight">
+            Khordha District • Tehsil Jatni • BhuNexis Platform
           </p>
         </div>
       </aside>
