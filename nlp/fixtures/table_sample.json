@@ -1,0 +1,73 @@
+{
+  "document_id": "DOC_TABLE_001",
+  "language": "en",
+  "pages": [
+    {
+      "page_number": 1,
+      "image_width": 2480,
+      "image_height": 3508,
+      "ocr_blocks": [
+        {
+          "text": "Name of Pattadar: Ramesh Chandra Sahu",
+          "bbox": [300.0, 300.0, 1100.0, 360.0],
+          "confidence": 0.97,
+          "language": "en"
+        },
+        {
+          "text": "Village: Khandagiri",
+          "bbox": [300.0, 380.0, 750.0, 440.0],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "Tehsil: Bhubaneswar",
+          "bbox": [800.0, 380.0, 1300.0, 440.0],
+          "confidence": 0.96,
+          "language": "en"
+        },
+        {
+          "text": "District: Khordha",
+          "bbox": [1350.0, 380.0, 1850.0, 440.0],
+          "confidence": 0.98,
+          "language": "en"
+        },
+        {
+          "text": "Khata No.",
+          "bbox": [300.0, 500.0, 600.0, 550.0],
+          "confidence": 0.98,
+          "language": "en"
+        },
+        {
+          "text": "Plot No.",
+          "bbox": [700.0, 500.0, 1000.0, 550.0],
+          "confidence": 0.97,
+          "language": "en"
+        },
+        {
+          "text": "Area",
+          "bbox": [1100.0, 500.0, 1400.0, 550.0],
+          "confidence": 0.96,
+          "language": "en"
+        },
+        {
+          "text": "45",
+          "bbox": [300.0, 580.0, 500.0, 630.0],
+          "confidence": 0.99,
+          "language": "en"
+        },
+        {
+          "text": "128/3",
+          "bbox": [700.0, 580.0, 950.0, 630.0],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "0.240 Acre",
+          "bbox": [1100.0, 580.0, 1380.0, 630.0],
+          "confidence": 0.94,
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

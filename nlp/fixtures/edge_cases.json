@@ -1,0 +1,73 @@
+{
+  "document_id": "DOC_EDGE_001",
+  "language": "en",
+  "pages": [
+    {
+      "page_number": 1,
+      "image_width": 2480,
+      "image_height": 3508,
+      "ocr_blocks": [
+        {
+          "text": "Pattadar Name",
+          "bbox": [320.0, 400.0, 650.0, 450.0],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "Ramesh Chandra Sah00",
+          "bbox": [700.0, 400.0, 1250.0, 450.0],
+          "confidence": 0.88,
+          "language": "en"
+        },
+        {
+          "text": "Khata  N0.",
+          "bbox": [320.0, 520.0, 600.0, 570.0],
+          "confidence": 0.92,
+          "language": "en"
+        },
+        {
+          "text": "45",
+          "bbox": [650.0, 520.0, 750.0, 570.0],
+          "confidence": 0.98,
+          "language": "en"
+        },
+        {
+          "text": "P1ot Number",
+          "bbox": [320.0, 640.0, 620.0, 690.0],
+          "confidence": 0.90,
+          "language": "en"
+        },
+        {
+          "text": "32811",
+          "bbox": [320.0, 710.0, 550.0, 760.0],
+          "confidence": 0.82,
+          "language": "en"
+        },
+        {
+          "text": "Land Area: 0.240 Acre",
+          "bbox": [320.0, 830.0, 820.0, 880.0],
+          "confidence": 0.93,
+          "language": "en"
+        },
+        {
+          "text": "Vil1age: Khandagiri",
+          "bbox": [320.0, 950.0, 780.0, 1000.0],
+          "confidence": 0.89,
+          "language": "en"
+        },
+        {
+          "text": "Tehsi1: Bhubaneswar",
+          "bbox": [320.0, 1070.0, 850.0, 1120.0],
+          "confidence": 0.91,
+          "language": "en"
+        },
+        {
+          "text": "Distt.: Khordha",
+          "bbox": [320.0, 1190.0, 750.0, 1240.0],
+          "confidence": 0.92,
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "document_id": "DOC_AMBIGUITY_STRESS_001",
+  "language": "en",
+  "pages": [
+    {
+      "page_number": 1,
+      "image_width": 2480,
+      "image_height": 3508,
+      "ocr_blocks": [
+        {
+          "text": "RECORD OF RIGHTS - REVENUE RECORD",
+          "bbox": [500.0, 150.0, 1980.0, 220.0],
+          "confidence": 0.96,
+          "language": "en"
+        },
+        {
+          "text": "Pattadar Name",
+          "bbox": [320.0, 350.0, 650.0, 400.0],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "Ramesh Chandra Sah00",
+          "bbox": [700.0, 350.0, 1300.0, 400.0],
+          "confidence": 0.88,
+          "language": "en"
+        },
+        {
+          "text": "Father's Name: Late Kailash Chandra Sah00",
+          "bbox": [320.0, 440.0, 1350.0, 490.0],
+          "confidence": 0.87,
+          "language": "en"
+        },
+        {
+          "text": "Khata  N0.",
+          "bbox": [320.0, 530.0, 600.0, 580.0],
+          "confidence": 0.91,
+          "language": "en"
+        },
+        {
+          "text": "4O5",
+          "bbox": [650.0, 530.0, 780.0, 580.0],
+          "confidence": 0.84,
+          "language": "en"
+        },
+        {
+          "text": "P1ot Number",
+          "bbox": [320.0, 620.0, 620.0, 670.0],
+          "confidence": 0.90,
+          "language": "en"
+        },
+        {
+          "text": "32811",
+          "bbox": [320.0, 690.0, 550.0, 740.0],
+          "confidence": 0.82,
+          "language": "en"
+        },
+        {
+          "text": "Land Area: 5 Guntha",
+          "bbox": [320.0, 800.0, 820.0, 850.0],
+          "confidence": 0.94,
+          "language": "en"
+        },
+        {
+          "text": "Date of Record: 15-Jun-1998",
+          "bbox": [320.0, 900.0, 920.0, 950.0],
+          "confidence": 0.93,
+          "language": "en"
+        },
+        {
+          "text": "Vil1age: Khandagiri",
+          "bbox": [320.0, 1000.0, 780.0, 1050.0],
+          "confidence": 0.89,
+          "language": "en"
+        },
+        {
+          "text": "Tehsi1: Bhubaneswar",
+          "bbox": [320.0, 1100.0, 850.0, 1150.0],
+          "confidence": 0.91,
+          "language": "en"
+        },
+        {
+          "text": "Distt.: Khordha",
+          "bbox": [320.0, 1200.0, 750.0, 1250.0],
+          "confidence": 0.92,
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

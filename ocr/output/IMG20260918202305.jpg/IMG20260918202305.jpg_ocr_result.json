@@ -1,0 +1,379 @@
+{
+  "document_id": "IMG20260918202305.jpg",
+  "language": "English",
+  "ocr_engine": "TrOCR (trocr-base-handwritten)",
+  "text": "0 1\nRecord of Rights ( Chairman Extract )\nnecessary\nw.\ndocument in. \" 1980 ,\nDistrict : Angul Transit : Banar et al\nvillage : Nuahata Kitakanoi 342\n47.\n0 2\ntopping\nplot no-12ups .\n0 1\n0 1\n# Owner , Rameshkumar Mahapatra\n6 Further : Jagannath mohapatra .\nhand classification : Sarada - II\nworkership\n0 0\narea in acespace .\nwill Wickling\n0 1\n\" Annual Rent : Rs.1s.so\n2 . Organizations of the hospital's findings\n1970s\n0 0\nspoken\nisahn .\n0 1\n0 1\n0 0\ns\n0 0\n0 1",
+  "confidence": 0.9,
+  "status": "Recognized",
+  "boxes_count": 33,
+  "preprocessing": {
+    "preset": "standard",
+    "deskew_angle": 0.0
+  },
+  "fallback_triggered": false,
+  "boxes": [
+    {
+      "text": "0 1",
+      "bbox": [
+        37.0,
+        51.0,
+        215.0,
+        72.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Record of Rights ( Chairman Extract )",
+      "bbox": [
+        565.0,
+        51.0,
+        1884.0,
+        198.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "necessary",
+      "bbox": [
+        0.0,
+        125.0,
+        477.0,
+        206.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "w.",
+      "bbox": [
+        1977.0,
+        163.0,
+        2400.0,
+        334.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "document in. \" 1980 ,",
+      "bbox": [
+        542.0,
+        186.0,
+        1406.0,
+        293.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "District : Angul Transit : Banar et al",
+      "bbox": [
+        566.0,
+        266.0,
+        1864.0,
+        405.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "village : Nuahata Kitakanoi 342",
+      "bbox": [
+        575.0,
+        372.0,
+        1811.0,
+        479.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "47.",
+      "bbox": [
+        1882.0,
+        378.0,
+        2075.0,
+        412.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 2",
+      "bbox": [
+        0.0,
+        406.0,
+        181.0,
+        436.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "topping",
+      "bbox": [
+        2066.0,
+        428.0,
+        2400.0,
+        473.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "plot no-12ups .",
+      "bbox": [
+        578.0,
+        472.0,
+        1237.0,
+        593.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        2034.0,
+        466.0,
+        2400.0,
+        658.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        70.0,
+        508.0,
+        252.0,
+        531.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "# Owner , Rameshkumar Mahapatra",
+      "bbox": [
+        506.0,
+        573.0,
+        1897.0,
+        672.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "6 Further : Jagannath mohapatra .",
+      "bbox": [
+        493.0,
+        667.0,
+        1669.0,
+        793.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "hand classification : Sarada - II",
+      "bbox": [
+        560.0,
+        768.0,
+        1813.0,
+        910.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "workership",
+      "bbox": [
+        0.0,
+        825.0,
+        236.0,
+        882.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 0",
+      "bbox": [
+        486.0,
+        860.0,
+        662.0,
+        883.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "area in acespace .",
+      "bbox": [
+        548.0,
+        908.0,
+        1303.0,
+        998.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "will Wickling",
+      "bbox": [
+        0.0,
+        932.0,
+        218.0,
+        985.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        496.0,
+        991.0,
+        672.0,
+        1012.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "\" Annual Rent : Rs.1s.so",
+      "bbox": [
+        489.0,
+        1005.0,
+        1511.0,
+        1102.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "2 . Organizations of the hospital's findings",
+      "bbox": [
+        474.0,
+        1103.0,
+        1905.0,
+        1332.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "1970s",
+      "bbox": [
+        4.0,
+        1134.0,
+        198.0,
+        1175.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 0",
+      "bbox": [
+        470.0,
+        1189.0,
+        646.0,
+        1210.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "spoken",
+      "bbox": [
+        2199.0,
+        1251.0,
+        2400.0,
+        1310.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "isahn .",
+      "bbox": [
+        1532.0,
+        1275.0,
+        1861.0,
+        1349.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        142.0,
+        1798.0,
+        321.0,
+        1821.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        89.0,
+        2036.0,
+        270.0,
+        2071.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 0",
+      "bbox": [
+        93.0,
+        2144.0,
+        271.0,
+        2168.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "s",
+      "bbox": [
+        2070.0,
+        2169.0,
+        2400.0,
+        2348.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 0",
+      "bbox": [
+        91.0,
+        2236.0,
+        269.0,
+        2265.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        112.0,
+        2286.0,
+        286.0,
+        2308.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    }
+  ]
+}

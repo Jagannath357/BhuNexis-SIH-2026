@@ -1,0 +1,167 @@
+{
+  "document_id": "sample_land_record_1",
+  "language": "en",
+  "pages": [
+    {
+      "page_number": 1,
+      "image_width": 1200,
+      "image_height": 1500,
+      "ocr_blocks": [
+        {
+          "text": "record of rights ( Khatiyan extract ,",
+          "bbox": [
+            79.0,
+            88.0,
+            982.0,
+            138.0
+          ],
+          "confidence": 0.9,
+          "language": "en"
+        },
+        {
+          "text": "document ID : L ROOT",
+          "bbox": [
+            79.0,
+            184.0,
+            520.0,
+            221.0
+          ],
+          "confidence": 0.6,
+          "language": "en"
+        },
+        {
+          "text": "District . Angel",
+          "bbox": [
+            79.0,
+            266.0,
+            410.0,
+            308.0
+          ],
+          "confidence": 0.75,
+          "language": "en"
+        },
+        {
+          "text": "Tahasili Banarpal",
+          "bbox": [
+            400.0,
+            266.0,
+            794.0,
+            308.0
+          ],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "Village . Nuahata . Khata No.342",
+          "bbox": [
+            76.0,
+            341.0,
+            753.0,
+            384.0
+          ],
+          "confidence": 0.82,
+          "language": "en"
+        },
+        {
+          "text": "plot no. 12413",
+          "bbox": [
+            79.0,
+            421.0,
+            408.0,
+            459.0
+          ],
+          "confidence": 0.84,
+          "language": "en"
+        },
+        {
+          "text": "\" Owner : Ramesh Kumar Mohapatra",
+          "bbox": [
+            77.0,
+            504.0,
+            739.0,
+            546.0
+          ],
+          "confidence": 0.9,
+          "language": "en"
+        },
+        {
+          "text": "5 Father : Jagannath Mohapatra",
+          "bbox": [
+            78.0,
+            584.0,
+            657.0,
+            626.0
+          ],
+          "confidence": 0.85,
+          "language": "en"
+        },
+        {
+          "text": "2 Land Classification : Sarada-11",
+          "bbox": [
+            79.0,
+            666.0,
+            655.0,
+            708.0
+          ],
+          "confidence": 0.75,
+          "language": "en"
+        },
+        {
+          "text": "Area . 0.85 acre.",
+          "bbox": [
+            77.0,
+            747.0,
+            425.0,
+            782.0
+          ],
+          "confidence": 0.78,
+          "language": "en"
+        },
+        {
+          "text": "Annual Rent . Rs 18.50",
+          "bbox": [
+            77.0,
+            822.0,
+            549.0,
+            860.0
+          ],
+          "confidence": 0.81,
+          "language": "en"
+        },
+        {
+          "text": "Date of Entry : 14-04-1992",
+          "bbox": [
+            79.0,
+            902.0,
+            617.0,
+            944.0
+          ],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "Signature of Tahasildar . R.K. Das.",
+          "bbox": [
+            77.0,
+            983.0,
+            716.0,
+            1025.0
+          ],
+          "confidence": 0.93,
+          "language": "en"
+        },
+        {
+          "text": "convenceded",
+          "bbox": [
+            896.0,
+            1214.0,
+            1177.0,
+            1408.0
+          ],
+          "confidence": 0.45,
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

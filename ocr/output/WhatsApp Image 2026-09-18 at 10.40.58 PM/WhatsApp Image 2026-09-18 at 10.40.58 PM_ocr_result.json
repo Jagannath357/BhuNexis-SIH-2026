@@ -1,0 +1,258 @@
+{
+  "document_id": "WhatsApp Image 2026-09-18 at 10.40.58 PM",
+  "language": "English",
+  "ocr_engine": "TrOCR (trocr-base-handwritten)",
+  "text": "country of Knights ( Oklahoma\n0 0\ncommonly to appeal\ncanavant\nwillitship\nDistrictists suggest\nVillage : Nkahala Khala no. 1992\n000 \"\nsplat no. 1247 )s .\n\" Owner : Ramesh Kumar M.P.\n\" Walker : Jagannath Mahapatra .\nhand classification : Sarada - I\na\nlavea 10, 85 acre\n\" Annual Rent : Rs. is so\n# Date of entry : \" 14-000-1992\n\" Signature of Takasilday , Sridharv\n0 1\nsatin .\n0 1\n0 1\n0 1",
+  "confidence": 0.9,
+  "status": "Recognized",
+  "boxes_count": 22,
+  "preprocessing": {
+    "preset": "raw",
+    "deskew_angle": 0.0
+  },
+  "fallback_triggered": false,
+  "boxes": [
+    {
+      "text": "country of Knights ( Oklahoma",
+      "bbox": [
+        213.0,
+        0.0,
+        946.0,
+        161.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 0",
+      "bbox": [
+        0.0,
+        169.0,
+        79.0,
+        205.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "commonly to appeal",
+      "bbox": [
+        216.0,
+        176.0,
+        833.0,
+        278.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "canavant",
+      "bbox": [
+        839.0,
+        204.0,
+        1323.0,
+        302.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "willitship",
+      "bbox": [
+        467.0,
+        267.0,
+        841.0,
+        334.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Districtists suggest",
+      "bbox": [
+        181.0,
+        294.0,
+        563.0,
+        389.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Village : Nkahala Khala no. 1992",
+      "bbox": [
+        107.0,
+        367.0,
+        1229.0,
+        496.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "000 \"",
+      "bbox": [
+        1005.0,
+        358.0,
+        1160.0,
+        382.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "splat no. 1247 )s .",
+      "bbox": [
+        123.0,
+        496.0,
+        642.0,
+        585.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "\" Owner : Ramesh Kumar M.P.",
+      "bbox": [
+        112.0,
+        582.0,
+        1134.0,
+        667.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "\" Walker : Jagannath Mahapatra .",
+      "bbox": [
+        109.0,
+        684.0,
+        1061.0,
+        783.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "hand classification : Sarada - I",
+      "bbox": [
+        103.0,
+        787.0,
+        1137.0,
+        905.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "a",
+      "bbox": [
+        728.0,
+        808.0,
+        856.0,
+        832.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "lavea 10, 85 acre",
+      "bbox": [
+        90.0,
+        914.0,
+        681.0,
+        990.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "\" Annual Rent : Rs. is so",
+      "bbox": [
+        78.0,
+        1003.0,
+        876.0,
+        1102.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "# Date of entry : \" 14-000-1992",
+      "bbox": [
+        59.0,
+        1088.0,
+        1034.0,
+        1236.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "\" Signature of Takasilday , Sridharv",
+      "bbox": [
+        93.0,
+        1202.0,
+        1259.0,
+        1315.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        119.0,
+        1295.0,
+        233.0,
+        1319.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "satin .",
+      "bbox": [
+        938.0,
+        1316.0,
+        1200.0,
+        1385.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        139.0,
+        1335.0,
+        263.0,
+        1362.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        1238.0,
+        1459.0,
+        1425.0,
+        1498.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        687.0,
+        1578.0,
+        869.0,
+        1600.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    }
+  ]
+}

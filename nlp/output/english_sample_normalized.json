@@ -1,0 +1,231 @@
+{
+  "document_id": "DOC_001",
+  "state": "ODISHA",
+  "language": "en",
+  "overall_status": "NORMALIZED",
+  "overall_confidence": 97.1,
+  "needs_human_review": false,
+  "review_reasons": [],
+  "fields": {
+    "khata_number": {
+      "field_name": "khata_number",
+      "tier": "TIER_1_IMMUTABLE",
+      "raw_value": "45",
+      "normalized_value": "45",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 98.1,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          650.0,
+          700.0,
+          710.0
+        ],
+        "source_text": "45",
+        "ocr_confidence": 0.98
+      },
+      "action_required": false
+    },
+    "plot_number": {
+      "field_name": "plot_number",
+      "tier": "TIER_1_IMMUTABLE",
+      "raw_value": "128/3",
+      "normalized_value": "128/3",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 97.1,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          750.0,
+          750.0,
+          810.0
+        ],
+        "source_text": "128/3",
+        "ocr_confidence": 0.94
+      },
+      "action_required": false
+    },
+    "area_value": {
+      "field_name": "area_value",
+      "tier": "TIER_1_IMMUTABLE",
+      "raw_value": "0.240 Acre",
+      "normalized_value": "0.240 Acre",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 96.4,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          850.0,
+          800.0,
+          910.0
+        ],
+        "source_text": "0.240 Acre",
+        "ocr_confidence": 0.91
+      },
+      "action_required": false
+    },
+    "area_unit": {
+      "field_name": "area_unit",
+      "tier": "TIER_2_SAFE_NORMALIZABLE",
+      "raw_value": "acre",
+      "normalized_value": "acre",
+      "candidate_value": null,
+      "status": "NORMALIZED",
+      "confidence_percentage": 96.4,
+      "flags": [],
+      "review_reason": null,
+      "evidence": null,
+      "action_required": false
+    },
+    "normalized_area_sqm": {
+      "field_name": "normalized_area_sqm",
+      "tier": "TIER_2_SAFE_NORMALIZABLE",
+      "raw_value": "971.25",
+      "normalized_value": 971.25,
+      "candidate_value": null,
+      "status": "NORMALIZED",
+      "confidence_percentage": 96.4,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          850.0,
+          800.0,
+          910.0
+        ],
+        "source_text": "0.240 Acre",
+        "ocr_confidence": 0.91
+      },
+      "action_required": false
+    },
+    "owner_name": {
+      "field_name": "owner_name",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Ramesh Chandra Sahu",
+      "normalized_value": "Ramesh Chandra Sahu",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 97.2,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          450.0,
+          1200.0,
+          510.0
+        ],
+        "source_text": "Ramesh Chandra Sahu",
+        "ocr_confidence": 0.96
+      },
+      "action_required": false
+    },
+    "father_or_guardian_name": {
+      "field_name": "father_or_guardian_name",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Late Kailash Chandra Sahu",
+      "normalized_value": "Kailash Chandra Sahu",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 97.0,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          540.0,
+          1250.0,
+          600.0
+        ],
+        "source_text": "Late Kailash Chandra Sahu",
+        "ocr_confidence": 0.95
+      },
+      "action_required": false
+    },
+    "village": {
+      "field_name": "village",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Khandagiri",
+      "normalized_value": "Khandagiri",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 97.0,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          950.0,
+          850.0,
+          1010.0
+        ],
+        "source_text": "Khandagiri",
+        "ocr_confidence": 0.95
+      },
+      "action_required": false
+    },
+    "tehsil": {
+      "field_name": "tehsil",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Bhubaneswar",
+      "normalized_value": "Bhubaneswar",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 97.2,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          1050.0,
+          900.0,
+          1110.0
+        ],
+        "source_text": "Bhubaneswar",
+        "ocr_confidence": 0.96
+      },
+      "action_required": false
+    },
+    "district": {
+      "field_name": "district",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Khordha",
+      "normalized_value": "Khordha",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 97.5,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          1150.0,
+          820.0,
+          1210.0
+        ],
+        "source_text": "Khordha",
+        "ocr_confidence": 0.97
+      },
+      "action_required": false
+    }
+  }
+}

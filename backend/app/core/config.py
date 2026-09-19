@@ -21,8 +21,8 @@ class Settings(BaseSettings):
     MAX_FILE_SIZE_MB: int = 25
     
     MINIO_ENDPOINT: str = "localhost:9000"
-    MINIO_ACCESS_KEY: str = "minioadmin"
-    MINIO_SECRET_KEY: str = "minioadmin"
+    MINIO_ACCESS_KEY: str = "bhunexisadmin"
+    MINIO_SECRET_KEY: str = "bhunexispassword123"
     MINIO_BUCKET: str = "bhunexis-documents"
     MINIO_SECURE: bool = False
 

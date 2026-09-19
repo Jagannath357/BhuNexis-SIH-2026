@@ -1,0 +1,73 @@
+{
+  "document_id": "DOC_001",
+  "language": "en",
+  "pages": [
+    {
+      "page_number": 1,
+      "image_width": 2480,
+      "image_height": 3508,
+      "ocr_blocks": [
+        {
+          "text": "GOVERNMENT OF ODISHA - REVENUE & DISASTER MANAGEMENT",
+          "bbox": [500.0, 150.0, 1980.0, 220.0],
+          "confidence": 0.98,
+          "language": "en"
+        },
+        {
+          "text": "RECORD OF RIGHTS (ROR) / KHATIAN",
+          "bbox": [750.0, 240.0, 1730.0, 300.0],
+          "confidence": 0.97,
+          "language": "en"
+        },
+        {
+          "text": "Name of Pattadar: Ramesh Chandra Sahu",
+          "bbox": [320.0, 450.0, 1200.0, 510.0],
+          "confidence": 0.96,
+          "language": "en"
+        },
+        {
+          "text": "Father's Name: Late Kailash Chandra Sahu",
+          "bbox": [320.0, 540.0, 1250.0, 600.0],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "Khata No: 45",
+          "bbox": [320.0, 650.0, 700.0, 710.0],
+          "confidence": 0.98,
+          "language": "en"
+        },
+        {
+          "text": "Plot No: 128/3",
+          "bbox": [320.0, 750.0, 750.0, 810.0],
+          "confidence": 0.94,
+          "language": "en"
+        },
+        {
+          "text": "Area: 0.240 Acre",
+          "bbox": [320.0, 850.0, 800.0, 910.0],
+          "confidence": 0.91,
+          "language": "en"
+        },
+        {
+          "text": "Village: Khandagiri",
+          "bbox": [320.0, 950.0, 850.0, 1010.0],
+          "confidence": 0.95,
+          "language": "en"
+        },
+        {
+          "text": "Tehsil: Bhubaneswar",
+          "bbox": [320.0, 1050.0, 900.0, 1110.0],
+          "confidence": 0.96,
+          "language": "en"
+        },
+        {
+          "text": "District: Khordha",
+          "bbox": [320.0, 1150.0, 820.0, 1210.0],
+          "confidence": 0.97,
+          "language": "en"
+        }
+      ]
+    }
+  ]
+}

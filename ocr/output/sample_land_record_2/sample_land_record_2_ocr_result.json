@@ -1,0 +1,367 @@
+{
+  "document_id": "sample_land_record_2",
+  "language": "English",
+  "ocr_engine": "TrOCR (trocr-base-handwritten)",
+  "text": "land mutation order certificate .\ndocument ID : LR.002\nMutation Case No. 41212005\nDistrict . Cuttack . Tahasili Salipur .\nVillage : Rampur\nKhata No. 88\nplot no.40512\n\" Owner . Sunita Devi\nVendor . Birendra Singh\nLund Type : Homestead ( Gharabari\nArea . 0.42 acre\n1 Mutation Fee Paid : Rs 150.\ndate : 22-009-2005\nverified by : Revenue Inspector\n0\nsoussoup",
+  "confidence": 0.9,
+  "status": "Recognized",
+  "boxes": [
+    {
+      "text": "land mutation order certificate .",
+      "confidence": 0.9,
+      "box": [
+        [
+          95,
+          84
+        ],
+        [
+          929,
+          84
+        ],
+        [
+          929,
+          141
+        ],
+        [
+          95,
+          141
+        ]
+      ]
+    },
+    {
+      "text": "document ID : LR.002",
+      "confidence": 0.9,
+      "box": [
+        [
+          93,
+          173
+        ],
+        [
+          535,
+          173
+        ],
+        [
+          535,
+          217
+        ],
+        [
+          93,
+          217
+        ]
+      ]
+    },
+    {
+      "text": "Mutation Case No. 41212005",
+      "confidence": 0.9,
+      "box": [
+        [
+          90,
+          253
+        ],
+        [
+          657,
+          253
+        ],
+        [
+          657,
+          300
+        ],
+        [
+          90,
+          300
+        ]
+      ]
+    },
+    {
+      "text": "District . Cuttack . Tahasili Salipur .",
+      "confidence": 0.9,
+      "box": [
+        [
+          89,
+          335
+        ],
+        [
+          771,
+          335
+        ],
+        [
+          771,
+          390
+        ],
+        [
+          89,
+          390
+        ]
+      ]
+    },
+    {
+      "text": "Village : Rampur",
+      "confidence": 0.9,
+      "box": [
+        [
+          85,
+          411
+        ],
+        [
+          445,
+          411
+        ],
+        [
+          445,
+          457
+        ],
+        [
+          85,
+          457
+        ]
+      ]
+    },
+    {
+      "text": "Khata No. 88",
+      "confidence": 0.9,
+      "box": [
+        [
+          440,
+          420
+        ],
+        [
+          740,
+          420
+        ],
+        [
+          740,
+          459
+        ],
+        [
+          440,
+          459
+        ]
+      ]
+    },
+    {
+      "text": "plot no.40512",
+      "confidence": 0.9,
+      "box": [
+        [
+          85,
+          490
+        ],
+        [
+          415,
+          490
+        ],
+        [
+          415,
+          532
+        ],
+        [
+          85,
+          532
+        ]
+      ]
+    },
+    {
+      "text": "\" Owner . Sunita Devi",
+      "confidence": 0.9,
+      "box": [
+        [
+          81,
+          571
+        ],
+        [
+          494,
+          571
+        ],
+        [
+          494,
+          614
+        ],
+        [
+          81,
+          614
+        ]
+      ]
+    },
+    {
+      "text": "Vendor . Birendra Singh",
+      "confidence": 0.9,
+      "box": [
+        [
+          79,
+          652
+        ],
+        [
+          560,
+          652
+        ],
+        [
+          560,
+          702
+        ],
+        [
+          79,
+          702
+        ]
+      ]
+    },
+    {
+      "text": "Lund Type : Homestead ( Gharabari",
+      "confidence": 0.9,
+      "box": [
+        [
+          78,
+          734
+        ],
+        [
+          745,
+          734
+        ],
+        [
+          745,
+          783
+        ],
+        [
+          78,
+          783
+        ]
+      ]
+    },
+    {
+      "text": "Area . 0.42 acre",
+      "confidence": 0.9,
+      "box": [
+        [
+          74,
+          812
+        ],
+        [
+          422,
+          812
+        ],
+        [
+          422,
+          852
+        ],
+        [
+          74,
+          852
+        ]
+      ]
+    },
+    {
+      "text": "1 Mutation Fee Paid : Rs 150.",
+      "confidence": 0.9,
+      "box": [
+        [
+          73,
+          894
+        ],
+        [
+          599,
+          894
+        ],
+        [
+          599,
+          941
+        ],
+        [
+          73,
+          941
+        ]
+      ]
+    },
+    {
+      "text": "date : 22-009-2005",
+      "confidence": 0.9,
+      "box": [
+        [
+          72,
+          974
+        ],
+        [
+          469,
+          974
+        ],
+        [
+          469,
+          1015
+        ],
+        [
+          72,
+          1015
+        ]
+      ]
+    },
+    {
+      "text": "verified by : Revenue Inspector",
+      "confidence": 0.9,
+      "box": [
+        [
+          68,
+          1050
+        ],
+        [
+          650,
+          1050
+        ],
+        [
+          650,
+          1102
+        ],
+        [
+          68,
+          1102
+        ]
+      ]
+    },
+    {
+      "text": "0",
+      "confidence": 0.9,
+      "box": [
+        [
+          1090,
+          1123
+        ],
+        [
+          1184,
+          1123
+        ],
+        [
+          1184,
+          1163
+        ],
+        [
+          1090,
+          1163
+        ]
+      ]
+    },
+    {
+      "text": "soussoup",
+      "confidence": 0.9,
+      "box": [
+        [
+          881,
+          1224
+        ],
+        [
+          1162,
+          1224
+        ],
+        [
+          1162,
+          1419
+        ],
+        [
+          881,
+          1419
+        ]
+      ]
+    }
+  ],
+  "preprocessing": {
+    "preset": "standard",
+    "deskew_angle": 0.0
+  },
+  "fallback_triggered": true
+}

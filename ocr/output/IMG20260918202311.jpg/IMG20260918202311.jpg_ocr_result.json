@@ -1,0 +1,543 @@
+{
+  "document_id": "IMG20260918202311.jpg",
+  "language": "English",
+  "ocr_engine": "TrOCR (trocr-base-handwritten)",
+  "text": "Record of Rights Gritzman Extract )\nDocument ID. ( ROOT\nDistrict : Angul Transit : Banaxport\nspillage : Nuahata khatano : 342\nplot no : 12uffs .\n0 1\nOwner , Rameshkumar Mahapoor\n0 1\n# better investigation in abortion - it\na\nnip-985 acre\n0 1\n0 0\nal Renti RS.B.50\nwhat\nreturned to the standardist .\n0.\nluxe\nsahn .\n0 0\n0 1\n0 0\n0 1\n0 1",
+  "confidence": 0.9,
+  "status": "Recognized",
+  "boxes": [
+    {
+      "text": "Record of Rights Gritzman Extract )",
+      "confidence": 0.9,
+      "box": [
+        [
+          129,
+          42
+        ],
+        [
+          2130,
+          42
+        ],
+        [
+          2130,
+          261
+        ],
+        [
+          129,
+          261
+        ]
+      ]
+    },
+    {
+      "text": "Document ID. ( ROOT",
+      "confidence": 0.9,
+      "box": [
+        [
+          148,
+          283
+        ],
+        [
+          1386,
+          283
+        ],
+        [
+          1386,
+          406
+        ],
+        [
+          148,
+          406
+        ]
+      ]
+    },
+    {
+      "text": "District : Angul Transit : Banaxport",
+      "confidence": 0.9,
+      "box": [
+        [
+          180,
+          358
+        ],
+        [
+          2093,
+          358
+        ],
+        [
+          2093,
+          600
+        ],
+        [
+          180,
+          600
+        ]
+      ]
+    },
+    {
+      "text": "spillage : Nuahata khatano : 342",
+      "confidence": 0.9,
+      "box": [
+        [
+          80,
+          575
+        ],
+        [
+          2002,
+          575
+        ],
+        [
+          2002,
+          735
+        ],
+        [
+          80,
+          735
+        ]
+      ]
+    },
+    {
+      "text": "plot no : 12uffs .",
+      "confidence": 0.9,
+      "box": [
+        [
+          190,
+          741
+        ],
+        [
+          1119,
+          741
+        ],
+        [
+          1119,
+          896
+        ],
+        [
+          190,
+          896
+        ]
+      ]
+    },
+    {
+      "text": "0 1",
+      "confidence": 0.9,
+      "box": [
+        [
+          1807,
+          859
+        ],
+        [
+          1982,
+          859
+        ],
+        [
+          1982,
+          885
+        ],
+        [
+          1807,
+          885
+        ]
+      ]
+    },
+    {
+      "text": "Owner , Rameshkumar Mahapoor",
+      "confidence": 0.9,
+      "box": [
+        [
+          170,
+          886
+        ],
+        [
+          2130,
+          886
+        ],
+        [
+          2130,
+          1018
+        ],
+        [
+          170,
+          1018
+        ]
+      ]
+    },
+    {
+      "text": "0 1",
+      "confidence": 0.9,
+      "box": [
+        [
+          71,
+          1037
+        ],
+        [
+          251,
+          1037
+        ],
+        [
+          251,
+          1059
+        ],
+        [
+          71,
+          1059
+        ]
+      ]
+    },
+    {
+      "text": "# better investigation in abortion - it",
+      "confidence": 0.9,
+      "box": [
+        [
+          78,
+          1051
+        ],
+        [
+          1992,
+          1051
+        ],
+        [
+          1992,
+          1401
+        ],
+        [
+          78,
+          1401
+        ]
+      ]
+    },
+    {
+      "text": "a",
+      "confidence": 0.9,
+      "box": [
+        [
+          1267,
+          1246
+        ],
+        [
+          1466,
+          1246
+        ],
+        [
+          1466,
+          1273
+        ],
+        [
+          1267,
+          1273
+        ]
+      ]
+    },
+    {
+      "text": "nip-985 acre",
+      "confidence": 0.9,
+      "box": [
+        [
+          457,
+          1448
+        ],
+        [
+          1205,
+          1448
+        ],
+        [
+          1205,
+          1542
+        ],
+        [
+          457,
+          1542
+        ]
+      ]
+    },
+    {
+      "text": "0 1",
+      "confidence": 0.9,
+      "box": [
+        [
+          460,
+          1426
+        ],
+        [
+          638,
+          1426
+        ],
+        [
+          638,
+          1458
+        ],
+        [
+          460,
+          1458
+        ]
+      ]
+    },
+    {
+      "text": "0 0",
+      "confidence": 0.9,
+      "box": [
+        [
+          443,
+          1562
+        ],
+        [
+          622,
+          1562
+        ],
+        [
+          622,
+          1594
+        ],
+        [
+          443,
+          1594
+        ]
+      ]
+    },
+    {
+      "text": "al Renti RS.B.50",
+      "confidence": 0.9,
+      "box": [
+        [
+          533,
+          1600
+        ],
+        [
+          1519,
+          1600
+        ],
+        [
+          1519,
+          1742
+        ],
+        [
+          533,
+          1742
+        ]
+      ]
+    },
+    {
+      "text": "what",
+      "confidence": 0.9,
+      "box": [
+        [
+          417,
+          1660
+        ],
+        [
+          617,
+          1660
+        ],
+        [
+          617,
+          1695
+        ],
+        [
+          417,
+          1695
+        ]
+      ]
+    },
+    {
+      "text": "returned to the standardist .",
+      "confidence": 0.9,
+      "box": [
+        [
+          411,
+          1743
+        ],
+        [
+          2125,
+          1743
+        ],
+        [
+          2125,
+          2055
+        ],
+        [
+          411,
+          2055
+        ]
+      ]
+    },
+    {
+      "text": "0.",
+      "confidence": 0.9,
+      "box": [
+        [
+          2260,
+          1951
+        ],
+        [
+          2400,
+          1951
+        ],
+        [
+          2400,
+          1972
+        ],
+        [
+          2260,
+          1972
+        ]
+      ]
+    },
+    {
+      "text": "luxe",
+      "confidence": 0.9,
+      "box": [
+        [
+          520,
+          2007
+        ],
+        [
+          695,
+          2007
+        ],
+        [
+          695,
+          2035
+        ],
+        [
+          520,
+          2035
+        ]
+      ]
+    },
+    {
+      "text": "sahn .",
+      "confidence": 0.9,
+      "box": [
+        [
+          1633,
+          2001
+        ],
+        [
+          2046,
+          2001
+        ],
+        [
+          2046,
+          2106
+        ],
+        [
+          1633,
+          2106
+        ]
+      ]
+    },
+    {
+      "text": "0 0",
+      "confidence": 0.9,
+      "box": [
+        [
+          653,
+          2088
+        ],
+        [
+          830,
+          2088
+        ],
+        [
+          830,
+          2110
+        ],
+        [
+          653,
+          2110
+        ]
+      ]
+    },
+    {
+      "text": "0 1",
+      "confidence": 0.9,
+      "box": [
+        [
+          678,
+          2173
+        ],
+        [
+          875,
+          2173
+        ],
+        [
+          875,
+          2206
+        ],
+        [
+          678,
+          2206
+        ]
+      ]
+    },
+    {
+      "text": "0 0",
+      "confidence": 0.9,
+      "box": [
+        [
+          687,
+          2200
+        ],
+        [
+          874,
+          2200
+        ],
+        [
+          874,
+          2238
+        ],
+        [
+          687,
+          2238
+        ]
+      ]
+    },
+    {
+      "text": "0 1",
+      "confidence": 0.9,
+      "box": [
+        [
+          774,
+          2351
+        ],
+        [
+          948,
+          2351
+        ],
+        [
+          948,
+          2378
+        ],
+        [
+          774,
+          2378
+        ]
+      ]
+    },
+    {
+      "text": "0 1",
+      "confidence": 0.9,
+      "box": [
+        [
+          784,
+          2380
+        ],
+        [
+          980,
+          2380
+        ],
+        [
+          980,
+          2400
+        ],
+        [
+          784,
+          2400
+        ]
+      ]
+    }
+  ],
+  "preprocessing": {
+    "preset": "standard",
+    "deskew_angle": 0.0
+  },
+  "fallback_triggered": true
+}

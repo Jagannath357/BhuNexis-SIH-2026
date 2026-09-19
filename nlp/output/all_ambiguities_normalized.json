@@ -1,0 +1,273 @@
+{
+  "document_id": "DOC_AMBIGUITY_STRESS_001",
+  "state": "ODISHA",
+  "language": "en",
+  "overall_status": "REVIEW_REQUIRED",
+  "overall_confidence": 78.4,
+  "needs_human_review": true,
+  "review_reasons": [
+    "OCR ambiguity detected: Character 'O' at pos 1 (possible ['0', 'Q', 'D']).",
+    "OCR ambiguity detected: Character '1' at pos 3 (possible ['/']).",
+    "OCR ambiguity detected: Character '0' at pos 18 (possible ['o', 'O']); Character '0' at pos 19 (possible ['o', 'O']).",
+    "OCR ambiguity detected: Character '0' at pos 24 (possible ['o', 'O']); Character '0' at pos 25 (possible ['o', 'O'])."
+  ],
+  "fields": {
+    "khata_number": {
+      "field_name": "khata_number",
+      "tier": "TIER_1_IMMUTABLE",
+      "raw_value": "4O5",
+      "normalized_value": null,
+      "candidate_value": "405",
+      "status": "REVIEW_REQUIRED",
+      "confidence_percentage": 48.5,
+      "flags": [
+        "CHAR_CONFUSION_O_TO_0",
+        "KHATA_NON_NUMERIC_SYNTAX",
+        "LOW_OCR_CONFIDENCE"
+      ],
+      "review_reason": "OCR ambiguity detected: Character 'O' at pos 1 (possible ['0', 'Q', 'D']).",
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          650.0,
+          530.0,
+          780.0,
+          580.0
+        ],
+        "source_text": "4O5",
+        "ocr_confidence": 0.84
+      },
+      "action_required": true
+    },
+    "plot_number": {
+      "field_name": "plot_number",
+      "tier": "TIER_1_IMMUTABLE",
+      "raw_value": "32811",
+      "normalized_value": null,
+      "candidate_value": "328/1",
+      "status": "REVIEW_REQUIRED",
+      "confidence_percentage": 52.4,
+      "flags": [
+        "SLASH_CONFUSION_1_FOR_SLASH",
+        "UNUSUALLY_LARGE_PLOT_NUMBER",
+        "LOW_OCR_CONFIDENCE"
+      ],
+      "review_reason": "OCR ambiguity detected: Character '1' at pos 3 (possible ['/']).",
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          690.0,
+          550.0,
+          740.0
+        ],
+        "source_text": "32811",
+        "ocr_confidence": 0.82
+      },
+      "action_required": true
+    },
+    "area_value": {
+      "field_name": "area_value",
+      "tier": "TIER_1_IMMUTABLE",
+      "raw_value": "5 Guntha",
+      "normalized_value": "5 Guntha",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 97.1,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          800.0,
+          820.0,
+          850.0
+        ],
+        "source_text": "5 Guntha",
+        "ocr_confidence": 0.94
+      },
+      "action_required": false
+    },
+    "area_unit": {
+      "field_name": "area_unit",
+      "tier": "TIER_2_SAFE_NORMALIZABLE",
+      "raw_value": "guntha",
+      "normalized_value": "guntha",
+      "candidate_value": null,
+      "status": "NORMALIZED",
+      "confidence_percentage": 97.1,
+      "flags": [],
+      "review_reason": null,
+      "evidence": null,
+      "action_required": false
+    },
+    "normalized_area_sqm": {
+      "field_name": "normalized_area_sqm",
+      "tier": "TIER_2_SAFE_NORMALIZABLE",
+      "raw_value": "505.86",
+      "normalized_value": 505.86,
+      "candidate_value": null,
+      "status": "NORMALIZED",
+      "confidence_percentage": 97.1,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          800.0,
+          820.0,
+          850.0
+        ],
+        "source_text": "5 Guntha",
+        "ocr_confidence": 0.94
+      },
+      "action_required": false
+    },
+    "document_date": {
+      "field_name": "document_date",
+      "tier": "TIER_2_SAFE_NORMALIZABLE",
+      "raw_value": "15-Jun-1998",
+      "normalized_value": "1998-06-15",
+      "candidate_value": null,
+      "status": "NORMALIZED",
+      "confidence_percentage": 97.4,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          900.0,
+          920.0,
+          950.0
+        ],
+        "source_text": "15-Jun-1998",
+        "ocr_confidence": 0.93
+      },
+      "action_required": false
+    },
+    "owner_name": {
+      "field_name": "owner_name",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Ramesh Chandra Sah00",
+      "normalized_value": null,
+      "candidate_value": "Ramesh Chandra Sahoo",
+      "status": "REVIEW_REQUIRED",
+      "confidence_percentage": 47.8,
+      "flags": [
+        "CHAR_CONFUSION_DIGIT_IN_NAME_0",
+        "ENTITY_CONTAINS_DIGITS"
+      ],
+      "review_reason": "OCR ambiguity detected: Character '0' at pos 18 (possible ['o', 'O']); Character '0' at pos 19 (possible ['o', 'O']).",
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          700.0,
+          350.0,
+          1300.0,
+          400.0
+        ],
+        "source_text": "Ramesh Chandra Sah00",
+        "ocr_confidence": 0.88
+      },
+      "action_required": true
+    },
+    "father_or_guardian_name": {
+      "field_name": "father_or_guardian_name",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Late Kailash Chandra Sah00",
+      "normalized_value": null,
+      "candidate_value": "Late Kailash Chandra Sahoo",
+      "status": "REVIEW_REQUIRED",
+      "confidence_percentage": 55.9,
+      "flags": [
+        "CHAR_CONFUSION_DIGIT_IN_NAME_0",
+        "ENTITY_CONTAINS_DIGITS"
+      ],
+      "review_reason": "OCR ambiguity detected: Character '0' at pos 24 (possible ['o', 'O']); Character '0' at pos 25 (possible ['o', 'O']).",
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          440.0,
+          1350.0,
+          490.0
+        ],
+        "source_text": "Late Kailash Chandra Sah00",
+        "ocr_confidence": 0.87
+      },
+      "action_required": true
+    },
+    "village": {
+      "field_name": "village",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Khandagiri",
+      "normalized_value": "Khandagiri",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 95.5,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          1000.0,
+          780.0,
+          1050.0
+        ],
+        "source_text": "Khandagiri",
+        "ocr_confidence": 0.89
+      },
+      "action_required": false
+    },
+    "tehsil": {
+      "field_name": "tehsil",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Bhubaneswar",
+      "normalized_value": "Bhubaneswar",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 96.0,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          1100.0,
+          850.0,
+          1150.0
+        ],
+        "source_text": "Bhubaneswar",
+        "ocr_confidence": 0.91
+      },
+      "action_required": false
+    },
+    "district": {
+      "field_name": "district",
+      "tier": "TIER_3_ENTITY_LINGUISTIC",
+      "raw_value": "Khordha",
+      "normalized_value": "Khordha",
+      "candidate_value": null,
+      "status": "EXTRACTED",
+      "confidence_percentage": 96.2,
+      "flags": [],
+      "review_reason": null,
+      "evidence": {
+        "page_number": 1,
+        "bbox": [
+          320.0,
+          1200.0,
+          750.0,
+          1250.0
+        ],
+        "source_text": "Khordha",
+        "ocr_confidence": 0.92
+      },
+      "action_required": false
+    }
+  }
+}

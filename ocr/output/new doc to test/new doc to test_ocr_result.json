@@ -1,0 +1,225 @@
+{
+  "document_id": "new doc to test",
+  "language": "English",
+  "ocr_engine": "TrOCR (trocr-base-handwritten)",
+  "text": "record of rights ( RORY KHTIAN\nName of Pattadar : Ramech Chandra Baket .\n0 1\nFather's Name : Late Kailach Chandra Sakir\nKahaka No.145\nplot no--, # 3/3\nArea : 0.240 acre\nvillage : Khandagiri\ntiensil : Bhubaneswar\ndistrict : Khordha\n0 1\n0 1\n0 1\n0 1\n0 1\n0 1\n0 1\n0 1\n0 1",
+  "confidence": 0.9,
+  "status": "Recognized",
+  "boxes_count": 19,
+  "preprocessing": {
+    "preset": "clahe_enhanced",
+    "deskew_angle": 0.0
+  },
+  "fallback_triggered": false,
+  "boxes": [
+    {
+      "text": "record of rights ( RORY KHTIAN",
+      "bbox": [
+        40.0,
+        92.0,
+        919.0,
+        244.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Name of Pattadar : Ramech Chandra Baket .",
+      "bbox": [
+        9.0,
+        238.0,
+        966.0,
+        314.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        945.0,
+        257.0,
+        1094.0,
+        284.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Father's Name : Late Kailach Chandra Sakir",
+      "bbox": [
+        26.0,
+        291.0,
+        1089.0,
+        380.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Kahaka No.145",
+      "bbox": [
+        15.0,
+        392.0,
+        456.0,
+        453.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "plot no--, # 3/3",
+      "bbox": [
+        23.0,
+        466.0,
+        431.0,
+        528.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Area : 0.240 acre",
+      "bbox": [
+        26.0,
+        534.0,
+        498.0,
+        596.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "village : Khandagiri",
+      "bbox": [
+        30.0,
+        600.0,
+        584.0,
+        695.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "tiensil : Bhubaneswar",
+      "bbox": [
+        19.0,
+        675.0,
+        540.0,
+        738.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "district : Khordha",
+      "bbox": [
+        28.0,
+        749.0,
+        479.0,
+        809.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        734.0,
+        887.0,
+        1064.0,
+        958.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        399.0,
+        906.0,
+        591.0,
+        929.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        772.0,
+        983.0,
+        1034.0,
+        1043.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        685.0,
+        1014.0,
+        794.0,
+        1044.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        811.0,
+        1040.0,
+        948.0,
+        1078.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        675.0,
+        1149.0,
+        815.0,
+        1178.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        819.0,
+        1135.0,
+        997.0,
+        1217.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        1097.0,
+        1186.0,
+        1200.0,
+        1223.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "0 1",
+      "bbox": [
+        979.0,
+        1211.0,
+        1113.0,
+        1361.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    }
+  ]
+}

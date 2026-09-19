@@ -1,0 +1,345 @@
+{
+  "document_id": "sample_land_record_3",
+  "language": "English",
+  "ocr_engine": "TrOCR (trocr-base-handwritten)",
+  "text": "LAND possession & boundary slip -\ndocument ID : L.R.003\n0\nCertificate No. POS-7891\nVillage : Madhuban . Khata No.115.\nplot no. 89011\n2 Possessor : Arvind Narayan\nAreai 1.60 Acre .\n# North Boundary : Public Village Road\n# South Boundary : Irrigation Canal\nEast Boundary : Land of K. Sharma\nDate of Inspectioni05-1-2012\nOfficer : Assistant Settlement Officer\n0\nconvenceds .",
+  "confidence": 0.9,
+  "status": "Recognized",
+  "boxes": [
+    {
+      "text": "LAND possession & boundary slip -",
+      "confidence": 0.9,
+      "box": [
+        [
+          78,
+          93
+        ],
+        [
+          892,
+          93
+        ],
+        [
+          892,
+          137
+        ],
+        [
+          78,
+          137
+        ]
+      ]
+    },
+    {
+      "text": "document ID : L.R.003",
+      "confidence": 0.9,
+      "box": [
+        [
+          79,
+          185
+        ],
+        [
+          520,
+          185
+        ],
+        [
+          520,
+          222
+        ],
+        [
+          79,
+          222
+        ]
+      ]
+    },
+    {
+      "text": "0",
+      "confidence": 0.9,
+      "box": [
+        [
+          1100,
+          232
+        ],
+        [
+          1194,
+          232
+        ],
+        [
+          1194,
+          270
+        ],
+        [
+          1100,
+          270
+        ]
+      ]
+    },
+    {
+      "text": "Certificate No. POS-7891",
+      "confidence": 0.9,
+      "box": [
+        [
+          77,
+          265
+        ],
+        [
+          578,
+          265
+        ],
+        [
+          578,
+          308
+        ],
+        [
+          77,
+          308
+        ]
+      ]
+    },
+    {
+      "text": "Village : Madhuban . Khata No.115.",
+      "confidence": 0.9,
+      "box": [
+        [
+          77,
+          345
+        ],
+        [
+          781,
+          345
+        ],
+        [
+          781,
+          388
+        ],
+        [
+          77,
+          388
+        ]
+      ]
+    },
+    {
+      "text": "plot no. 89011",
+      "confidence": 0.9,
+      "box": [
+        [
+          79,
+          421
+        ],
+        [
+          408,
+          421
+        ],
+        [
+          408,
+          459
+        ],
+        [
+          79,
+          459
+        ]
+      ]
+    },
+    {
+      "text": "2 Possessor : Arvind Narayan",
+      "confidence": 0.9,
+      "box": [
+        [
+          79,
+          504
+        ],
+        [
+          600,
+          504
+        ],
+        [
+          600,
+          547
+        ],
+        [
+          79,
+          547
+        ]
+      ]
+    },
+    {
+      "text": "Areai 1.60 Acre .",
+      "confidence": 0.9,
+      "box": [
+        [
+          77,
+          584
+        ],
+        [
+          424,
+          584
+        ],
+        [
+          424,
+          619
+        ],
+        [
+          77,
+          619
+        ]
+      ]
+    },
+    {
+      "text": "# North Boundary : Public Village Road",
+      "confidence": 0.9,
+      "box": [
+        [
+          78,
+          661
+        ],
+        [
+          786,
+          661
+        ],
+        [
+          786,
+          704
+        ],
+        [
+          78,
+          704
+        ]
+      ]
+    },
+    {
+      "text": "# South Boundary : Irrigation Canal",
+      "confidence": 0.9,
+      "box": [
+        [
+          77,
+          745
+        ],
+        [
+          720,
+          745
+        ],
+        [
+          720,
+          787
+        ],
+        [
+          77,
+          787
+        ]
+      ]
+    },
+    {
+      "text": "East Boundary : Land of K. Sharma",
+      "confidence": 0.9,
+      "box": [
+        [
+          78,
+          824
+        ],
+        [
+          739,
+          824
+        ],
+        [
+          739,
+          866
+        ],
+        [
+          78,
+          866
+        ]
+      ]
+    },
+    {
+      "text": "Date of Inspectioni05-1-2012",
+      "confidence": 0.9,
+      "box": [
+        [
+          79,
+          904
+        ],
+        [
+          688,
+          904
+        ],
+        [
+          688,
+          946
+        ],
+        [
+          79,
+          946
+        ]
+      ]
+    },
+    {
+      "text": "Officer : Assistant Settlement Officer",
+      "confidence": 0.9,
+      "box": [
+        [
+          77,
+          983
+        ],
+        [
+          739,
+          983
+        ],
+        [
+          739,
+          1025
+        ],
+        [
+          77,
+          1025
+        ]
+      ]
+    },
+    {
+      "text": "0",
+      "confidence": 0.9,
+      "box": [
+        [
+          1100,
+          1175
+        ],
+        [
+          1194,
+          1175
+        ],
+        [
+          1194,
+          1218
+        ],
+        [
+          1100,
+          1218
+        ]
+      ]
+    },
+    {
+      "text": "convenceds .",
+      "confidence": 0.9,
+      "box": [
+        [
+          896,
+          1214
+        ],
+        [
+          1177,
+          1214
+        ],
+        [
+          1177,
+          1408
+        ],
+        [
+          896,
+          1408
+        ]
+      ]
+    }
+  ],
+  "preprocessing": {
+    "preset": "standard",
+    "deskew_angle": -1.8
+  },
+  "fallback_triggered": true
+}

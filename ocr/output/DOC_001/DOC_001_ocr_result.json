@@ -1,0 +1,137 @@
+{
+  "document_id": "DOC_001",
+  "language": "English",
+  "ocr_engine": "TrOCR (trocr-base-handwritten)",
+  "text": "\" Government of Odisha - revenue is disaster management .\nrecord of rights ( Rory , Khatian ...\n\" Name of Pattadar . Ramesh Chandra Sahu\n5 Father's Name : Late Kailash Chandra Sahu\nKhata No.45\nplot no. 12813\nareas 0.240 acre\nVillage . Khandagiri\n6 Tehsili Bhubaneswar\nDistrict . Khordha\nconvenceds .",
+  "confidence": 0.9,
+  "status": "Recognized",
+  "boxes_count": 11,
+  "preprocessing": {
+    "preset": "standard",
+    "deskew_angle": 0.0
+  },
+  "fallback_triggered": false,
+  "boxes": [
+    {
+      "text": "\" Government of Odisha - revenue is disaster management .",
+      "bbox": [
+        37.0,
+        88.0,
+        1174.0,
+        125.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "record of rights ( Rory , Khatian ...",
+      "bbox": [
+        78.0,
+        132.0,
+        721.0,
+        173.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "\" Name of Pattadar . Ramesh Chandra Sahu",
+      "bbox": [
+        78.0,
+        207.0,
+        862.0,
+        250.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "5 Father's Name : Late Kailash Chandra Sahu",
+      "bbox": [
+        78.0,
+        290.0,
+        879.0,
+        329.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Khata No.45",
+      "bbox": [
+        79.0,
+        366.0,
+        384.0,
+        404.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "plot no. 12813",
+      "bbox": [
+        79.0,
+        447.0,
+        408.0,
+        485.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "areas 0.240 acre",
+      "bbox": [
+        76.0,
+        531.0,
+        446.0,
+        566.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "Village . Khandagiri",
+      "bbox": [
+        77.0,
+        608.0,
+        493.0,
+        650.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "6 Tehsili Bhubaneswar",
+      "bbox": [
+        76.0,
+        691.0,
+        513.0,
+        729.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "District . Khordha",
+      "bbox": [
+        79.0,
+        768.0,
+        455.0,
+        806.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    },
+    {
+      "text": "convenceds .",
+      "bbox": [
+        896.0,
+        1214.0,
+        1177.0,
+        1408.0
+      ],
+      "confidence": 0.9,
+      "language": "en"
+    }
+  ]
+}
