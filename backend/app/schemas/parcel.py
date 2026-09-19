@@ -50,11 +50,19 @@ class GeoJSONFeatureProperties(BaseModel):
     parcel_id: int
     parcel_uid: str
     survey_number: Optional[str] = None
+    khasra_number: Optional[str] = None
     khata_number: Optional[str] = None
+    plot_number: Optional[str] = None
     village: Optional[str] = None
+    tehsil: Optional[str] = None
+    district: Optional[str] = None
+    state: Optional[str] = None
+    land_classification: Optional[str] = None
+    land_use: Optional[str] = None
     area: Optional[float] = None
     area_unit: Optional[str] = None
     status: str
+    owner_names: Optional[str] = None
 
 class GeoJSONFeature(BaseModel):
     type: str = "Feature"

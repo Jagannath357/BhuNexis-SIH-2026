@@ -1,7 +1,7 @@
 import bcrypt
 import jwt
 from datetime import datetime, timedelta, timezone
-from typing import Any, Union, Dict
+from typing import Any, Union, Dict, Optional
 from app.core.config import settings
 
 def hash_password(password: str) -> str:
@@ -14,7 +14,7 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
     except Exception:
         return False
 
-def create_access_token(subject: Union[str, Any], role: str, email: str, expires_delta: timedelta = None) -> str:
+def create_access_token(subject: Union[str, int, Any], role: str, email: str, expires_delta: Optional[timedelta] = None) -> str:
     if expires_delta:
         expire = datetime.now(timezone.utc) + expires_delta
     else:
@@ -29,9 +29,9 @@ def create_access_token(subject: Union[str, Any], role: str, email: str, expires
     encoded_jwt = jwt.encode(to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM)
     return encoded_jwt
 
-def decode_access_token(token: str) -> Dict[str, Any]:
+def decode_access_token(token: str) -> Optional[Dict[str, Any]]:
     try:
         payload = jwt.decode(token, settings.JWT_SECRET_KEY, algorithms=[settings.JWT_ALGORITHM])
         return payload
-    except jwt.PyJWTError:
+    except Exception:
         return None

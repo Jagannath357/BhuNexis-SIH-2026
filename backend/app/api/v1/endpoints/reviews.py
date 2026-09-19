@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from app.db.session import get_db
 from app.api.deps import require_roles
 from app.core.rbac import AppRole
-from app.models.all_models import ReviewCase, Parcel, ExtractedField, User
+from app.models.all_models import ReviewCase, Parcel, ExtractedField, User, DocumentPage
 from app.schemas.review import ReviewCaseResponse, ReviewUpdateRequest, ReviewActionRequest
 from app.core.audit import log_audit_event
 
@@ -63,8 +63,10 @@ def update_review_correction(
     review.assigned_to = current_user.id
     
     if data.field_name and data.corrected_value and review.document_id:
-        extracted = db.query(ExtractedField).filter(
-            ExtractedField.document_id == review.document_id,
+        extracted = db.query(ExtractedField).join(
+            DocumentPage, ExtractedField.document_page_id == DocumentPage.id
+        ).filter(
+            DocumentPage.document_id == review.document_id,
             ExtractedField.field_name == data.field_name
         ).first()
         if extracted:

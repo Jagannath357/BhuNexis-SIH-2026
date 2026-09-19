@@ -78,9 +78,19 @@ class DocumentPage(Base):
     def ocr_text(self) -> Optional[str]:
         return None
 
+    @ocr_text.setter
+    def ocr_text(self, value: Optional[str]) -> None:
+        pass
+
     @property
     def confidence_score(self) -> Optional[float]:
         return float(self.quality_score) if self.quality_score is not None else None
+
+    @confidence_score.setter
+    def confidence_score(self, value: Optional[float]) -> None:
+        if value is not None:
+            self.quality_score = float(value)
+
 
     document: Mapped["Document"] = relationship("Document", back_populates="pages")
     extracted_fields: Mapped[List["ExtractedField"]] = relationship("ExtractedField", back_populates="page")
@@ -194,6 +204,10 @@ class ExtractedField(Base):
     def status(self) -> Optional[str]:
         return self.validation_status
 
+    @status.setter
+    def status(self, value: Optional[str]) -> None:
+        self.validation_status = value
+
     @property
     def bounding_box(self) -> Optional[Dict[str, Any]]:
         return self.source_bbox
@@ -247,6 +261,15 @@ class ReviewCase(Base):
     @property
     def reviewer_notes(self) -> Optional[str]:
         return self.reviewer_comment
+
+    @reviewer_notes.setter
+    def reviewer_notes(self, value: Optional[str]) -> None:
+        self.reviewer_comment = value
+
+    @property
+    def review_type(self) -> Optional[str]:
+        return self.reason
+
 
     parcel: Mapped["Parcel"] = relationship("Parcel", back_populates="review_cases")
     assignee: Mapped[Optional["User"]] = relationship("User", back_populates="assigned_reviews")

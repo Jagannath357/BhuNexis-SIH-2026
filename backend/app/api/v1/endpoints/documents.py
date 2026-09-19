@@ -139,7 +139,7 @@ def get_document_status(
         )
         
     total_pages = db.query(DocumentPage).filter(DocumentPage.document_id == document_id).count()
-    processed_pages = db.query(DocumentPage).filter(DocumentPage.document_id == document_id, DocumentPage.ocr_text != None).count()
+    processed_pages = db.query(DocumentPage).filter(DocumentPage.document_id == document_id, DocumentPage.ocr_status.isnot(None)).count()
     
     return DocumentStatusResponse(
         document_id=doc.id,
@@ -147,3 +147,4 @@ def get_document_status(
         pages_total=max(total_pages, 1),
         pages_processed=processed_pages
     )
+

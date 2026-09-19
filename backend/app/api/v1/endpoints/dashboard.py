@@ -142,7 +142,7 @@ def get_auditor_dashboard(
 
 @router.get("/citizen")
 def get_citizen_dashboard(
-    current_user: User = Depends(require_roles([AppRole.CITIZEN])),
+    current_user: User = Depends(require_roles([AppRole.CITIZEN, AppRole.ADMIN])),
     db: Session = Depends(get_db)
 ):
     # Derive citizen identity strictly from JWT user email / name matching owner

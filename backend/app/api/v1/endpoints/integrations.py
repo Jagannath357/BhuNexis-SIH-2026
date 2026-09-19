@@ -121,7 +121,9 @@ def receive_validation_results(
     parcel = db.query(Parcel).filter(Parcel.parcel_uid == payload.parcel_uid).first() if payload.parcel_uid else None
     
     doc_id = doc.id if doc else None
-    parcel_id = parcel.id if parcel else (db.query(Parcel.id).first()[0] if db.query(Parcel).first() else 1)
+    first_parcel = db.query(Parcel).first()
+    parcel_id = parcel.id if parcel else (first_parcel.id if first_parcel else 1)
+
     
     has_conflicts = False
     for res in payload.results:
