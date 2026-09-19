@@ -110,14 +110,16 @@ def get_reviewer_dashboard(
 
 @router.get("/auditor")
 def get_auditor_dashboard(
-    current_user: User = Depends(require_roles([AppRole.AUDITOR])),
+    current_user: User = Depends(require_roles([AppRole.AUDITOR, AppRole.ADMIN])),
     db: Session = Depends(get_db)
 ):
     total_audit_events = db.query(func.count(AuditEvent.id)).scalar()
     total_verifications = db.query(func.count(Parcel.id)).filter(Parcel.status == "VERIFIED").scalar()
     total_reviews = db.query(func.count(ReviewCase.id)).scalar()
-    
+    total_conflicts = db.query(func.count(ReviewCase.id)).filter(ReviewCase.status == "REJECTED").scalar()
+
     events = db.query(AuditEvent).order_by(AuditEvent.created_at.desc()).limit(15).all()
+    conflicts = db.query(ReviewCase).filter(ReviewCase.status == "REJECTED").order_by(ReviewCase.created_at.desc()).limit(20).all()
     
     return {
         "success": True,
@@ -125,6 +127,7 @@ def get_auditor_dashboard(
             "total_audit_events": total_audit_events,
             "total_verified_parcels": total_verifications,
             "total_review_cases": total_reviews,
+            "total_conflict_cases": total_conflicts,
             "compliance_status": "COMPLIANT",
             "recent_audit_events": [
                 {
@@ -136,6 +139,18 @@ def get_auditor_dashboard(
                     "created_at": ev.created_at
                 }
                 for ev in events
+            ],
+            "conflict_cases": [
+                {
+                    "id": rc.id,
+                    "case_uid": rc.case_uid,
+                    "parcel_id": rc.parcel_id,
+                    "document_id": rc.document_id,
+                    "reason": rc.reason,
+                    "reviewer_notes": rc.reviewer_notes,
+                    "created_at": rc.created_at
+                }
+                for rc in conflicts
             ]
         }
     }

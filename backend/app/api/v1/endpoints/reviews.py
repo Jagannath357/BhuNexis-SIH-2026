@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from app.db.session import get_db
 from app.api.deps import require_roles
 from app.core.rbac import AppRole
-from app.models.all_models import ReviewCase, Parcel, ExtractedField, User, DocumentPage
+from app.models.all_models import ReviewCase, Parcel, ExtractedField, User, DocumentPage, Document, ParcelGeometry
 from app.schemas.review import ReviewCaseResponse, ReviewUpdateRequest, ReviewActionRequest
 from app.core.audit import log_audit_event
 
@@ -22,6 +22,9 @@ def get_review_queue(
     query = db.query(ReviewCase)
     if status:
         query = query.filter(ReviewCase.status == status)
+    else:
+        # Default active review queue returns PENDING and IN_REVIEW
+        query = query.filter(ReviewCase.status.in_(["PENDING", "IN_REVIEW"]))
     if priority:
         query = query.filter(ReviewCase.priority == priority)
     if assigned_to:
@@ -48,7 +51,7 @@ def get_review_detail(
 def update_review_correction(
     review_id: int,
     data: ReviewUpdateRequest,
-    current_user: User = Depends(require_roles([AppRole.REVIEWER])),
+    current_user: User = Depends(require_roles([AppRole.REVIEWER, AppRole.ADMIN])),
     db: Session = Depends(get_db)
 ):
     review = db.query(ReviewCase).filter(ReviewCase.id == review_id).first()
@@ -90,7 +93,7 @@ def update_review_correction(
 def approve_review(
     review_id: int,
     data: Optional[ReviewActionRequest] = None,
-    current_user: User = Depends(require_roles([AppRole.REVIEWER])),
+    current_user: User = Depends(require_roles([AppRole.REVIEWER, AppRole.ADMIN])),
     db: Session = Depends(get_db)
 ):
     review = db.query(ReviewCase).filter(ReviewCase.id == review_id).first()
@@ -100,12 +103,27 @@ def approve_review(
             detail={"code": "REVIEW_NOT_FOUND", "message": f"Review case ID {review_id} not found."}
         )
         
-    review.status = "APPROVED"
+    review.status = "RESOLVED"
     review.assigned_to = current_user.id
     review.resolved_at = datetime.now(timezone.utc)
     if data and data.reviewer_comment:
         review.reviewer_notes = data.reviewer_comment
-        
+
+    # Update associated document status
+    if review.document_id:
+        doc = db.query(Document).filter(Document.id == review.document_id).first()
+        if doc:
+            doc.processing_status = "VERIFIED"
+
+    # Update associated parcel & geometry
+    if review.parcel_id:
+        parcel = db.query(Parcel).filter(Parcel.id == review.parcel_id).first()
+        if parcel:
+            parcel.status = "VERIFIED"
+        pg_geom = db.query(ParcelGeometry).filter(ParcelGeometry.parcel_id == review.parcel_id).first()
+        if pg_geom:
+            pg_geom.gis_status = "VERIFIED"
+
     db.commit()
     db.refresh(review)
     
@@ -122,7 +140,7 @@ def approve_review(
 def reject_review(
     review_id: int,
     data: Optional[ReviewActionRequest] = None,
-    current_user: User = Depends(require_roles([AppRole.REVIEWER])),
+    current_user: User = Depends(require_roles([AppRole.REVIEWER, AppRole.ADMIN])),
     db: Session = Depends(get_db)
 ):
     review = db.query(ReviewCase).filter(ReviewCase.id == review_id).first()
@@ -137,7 +155,21 @@ def reject_review(
     review.resolved_at = datetime.now(timezone.utc)
     if data and data.reviewer_comment:
         review.reviewer_notes = data.reviewer_comment
-        
+
+    # Flag document & parcel as conflict for Auditor dashboard
+    if review.document_id:
+        doc = db.query(Document).filter(Document.id == review.document_id).first()
+        if doc:
+            doc.processing_status = "FAILED"
+
+    if review.parcel_id:
+        parcel = db.query(Parcel).filter(Parcel.id == review.parcel_id).first()
+        if parcel:
+            parcel.status = "FLAGGED_CONFLICT"
+        pg_geom = db.query(ParcelGeometry).filter(ParcelGeometry.parcel_id == review.parcel_id).first()
+        if pg_geom:
+            pg_geom.gis_status = "FLAGGED_CONFLICT"
+
     db.commit()
     db.refresh(review)
     
@@ -154,35 +186,7 @@ def reject_review(
 def verify_review(
     review_id: int,
     data: Optional[ReviewActionRequest] = None,
-    current_user: User = Depends(require_roles([AppRole.REVIEWER])),
+    current_user: User = Depends(require_roles([AppRole.REVIEWER, AppRole.ADMIN])),
     db: Session = Depends(get_db)
 ):
-    review = db.query(ReviewCase).filter(ReviewCase.id == review_id).first()
-    if not review:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail={"code": "REVIEW_NOT_FOUND", "message": f"Review case ID {review_id} not found."}
-        )
-        
-    review.status = "RESOLVED"
-    review.assigned_to = current_user.id
-    review.resolved_at = datetime.now(timezone.utc)
-    if data and data.reviewer_comment:
-        review.reviewer_notes = data.reviewer_comment
-        
-    parcel = db.query(Parcel).filter(Parcel.id == review.parcel_id).first()
-    if parcel:
-        parcel.status = "VERIFIED"
-        
-    db.commit()
-    db.refresh(review)
-    
-    log_audit_event(
-        db=db,
-        action="PARCEL_VERIFIED",
-        user_id=current_user.id,
-        entity_type="Parcel",
-        entity_id=review.parcel_id,
-        changes={"review_id": review.id, "status": "VERIFIED"}
-    )
-    return review
+    return approve_review(review_id=review_id, data=data, current_user=current_user, db=db)

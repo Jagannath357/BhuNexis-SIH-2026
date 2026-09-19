@@ -64,12 +64,21 @@ async def upload_document(
         document_id=doc.id,
         page_number=1,
         image_path=saved_path,
+        ocr_status="PENDING",
         language=language or "odia",
         ocr_text=""
     )
     db.add(page)
     db.commit()
     
+    # Run end-to-end OCR -> NLP -> Persistence pipeline
+    try:
+        from app.services.pipeline_service import run_end_to_end_pipeline
+        run_end_to_end_pipeline(db=db, document_id=doc.id)
+        db.refresh(doc)
+    except Exception as pe:
+        pass
+
     log_audit_event(
         db=db,
         action="DOCUMENT_UPLOADED",

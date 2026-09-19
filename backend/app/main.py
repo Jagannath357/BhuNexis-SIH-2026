@@ -33,6 +33,11 @@ async def http_exception_handler(request: Request, exc: HTTPException):
     detail = exc.detail
     if isinstance(detail, dict) and "code" in detail and "message" in detail:
         error_payload = detail
+    elif isinstance(detail, str):
+        error_payload = {
+            "code": "HTTP_ERROR",
+            "message": detail
+        }
     else:
         error_payload = {
             "code": "HTTP_ERROR",

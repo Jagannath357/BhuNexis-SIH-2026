@@ -34,4 +34,8 @@ dependencies = [
 where = ["."]
 
 [tool.pytest.ini_options]
-pythonpath = ["."]
+pythonpath = [".", "..", "../ocr", "../nlp"]
+
+[tool.pyright]
+extraPaths = [".", "..", "../ocr", "../nlp"]
+

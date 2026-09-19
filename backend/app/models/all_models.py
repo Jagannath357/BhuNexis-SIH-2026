@@ -49,11 +49,19 @@ class Document(Base):
 
     @property
     def file_size(self) -> Optional[int]:
-        return None
+        return getattr(self, "_file_size", None)
+
+    @file_size.setter
+    def file_size(self, value: Optional[int]) -> None:
+        self._file_size = value
 
     @property
     def updated_at(self) -> Optional[datetime]:
-        return self.created_at
+        return getattr(self, "_updated_at", self.created_at)
+
+    @updated_at.setter
+    def updated_at(self, value: Optional[datetime]) -> None:
+        self._updated_at = value
 
     uploader: Mapped[Optional["User"]] = relationship("User", back_populates="documents")
     pages: Mapped[List["DocumentPage"]] = relationship("DocumentPage", back_populates="document", cascade="all, delete-orphan")
@@ -91,6 +99,14 @@ class DocumentPage(Base):
         if value is not None:
             self.quality_score = float(value)
 
+    @property
+    def language(self) -> Optional[str]:
+        return getattr(self, "_language", None)
+
+    @language.setter
+    def language(self, value: Optional[str]) -> None:
+        self._language = value
+
 
     document: Mapped["Document"] = relationship("Document", back_populates="pages")
     extracted_fields: Mapped[List["ExtractedField"]] = relationship("ExtractedField", back_populates="page")
@@ -119,6 +135,10 @@ class Owner(Base):
     @property
     def father_or_husband_name(self) -> Optional[str]:
         return self.father_name
+
+    @father_or_husband_name.setter
+    def father_or_husband_name(self, value: Optional[str]) -> None:
+        self.father_name = value
 
     land_rights: Mapped[List["LandRight"]] = relationship("LandRight", back_populates="owner")
 
@@ -150,9 +170,17 @@ class Parcel(Base):
     def recorded_area(self) -> Optional[float]:
         return self.area
 
+    @recorded_area.setter
+    def recorded_area(self, value: Optional[float]) -> None:
+        self.area = value
+
     @property
     def recorded_area_unit(self) -> Optional[str]:
         return self.area_unit
+
+    @recorded_area_unit.setter
+    def recorded_area_unit(self, value: Optional[str]) -> None:
+        self.area_unit = value
 
     land_rights: Mapped[List["LandRight"]] = relationship("LandRight", back_populates="parcel")
     validation_results: Mapped[List["ValidationResult"]] = relationship("ValidationResult", back_populates="parcel")
@@ -200,6 +228,18 @@ class ExtractedField(Base):
     def document_id(self) -> Optional[int]:
         return self.page.document_id if self.page else None
 
+    @document_id.setter
+    def document_id(self, value: Optional[int]) -> None:
+        pass
+
+    @property
+    def page_id(self) -> Optional[int]:
+        return self.document_page_id
+
+    @page_id.setter
+    def page_id(self, value: Optional[int]) -> None:
+        self.document_page_id = value
+
     @property
     def status(self) -> Optional[str]:
         return self.validation_status
@@ -211,6 +251,10 @@ class ExtractedField(Base):
     @property
     def bounding_box(self) -> Optional[Dict[str, Any]]:
         return self.source_bbox
+
+    @bounding_box.setter
+    def bounding_box(self, value: Optional[Dict[str, Any]]) -> None:
+        self.source_bbox = value
 
     document: Mapped[Optional["Document"]] = relationship("Document", secondary="core.document_pages", primaryjoin="ExtractedField.document_page_id == DocumentPage.id", secondaryjoin="DocumentPage.document_id == Document.id", viewonly=True)
     page: Mapped[Optional["DocumentPage"]] = relationship("DocumentPage", back_populates="extracted_fields")
@@ -256,7 +300,11 @@ class ReviewCase(Base):
 
     @property
     def case_uid(self) -> str:
-        return f"REV-{self.id:05d}"
+        return f"REV-{self.id:05d}" if self.id else "REV-00000"
+
+    @case_uid.setter
+    def case_uid(self, value: str) -> None:
+        pass
 
     @property
     def reviewer_notes(self) -> Optional[str]:
@@ -269,6 +317,10 @@ class ReviewCase(Base):
     @property
     def review_type(self) -> Optional[str]:
         return self.reason
+
+    @review_type.setter
+    def review_type(self, value: Optional[str]) -> None:
+        self.reason = value
 
 
     parcel: Mapped["Parcel"] = relationship("Parcel", back_populates="review_cases")
@@ -294,9 +346,17 @@ class AuditEvent(Base):
     def changes(self) -> Optional[Dict[str, Any]]:
         return {"old": self.old_value, "new": self.new_value} if (self.old_value or self.new_value) else None
 
+    @changes.setter
+    def changes(self, value: Optional[Dict[str, Any]]) -> None:
+        pass
+
     @property
     def ip_address(self) -> Optional[str]:
         return "127.0.0.1"
+
+    @ip_address.setter
+    def ip_address(self, value: Optional[str]) -> None:
+        pass
 
     user: Mapped[Optional["User"]] = relationship("User", back_populates="audit_events")
 
