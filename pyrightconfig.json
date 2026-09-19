@@ -1,0 +1,20 @@
+{
+  "include": [
+    "backend"
+  ],
+  "extraPaths": [
+    "backend",
+    "backend/app"
+  ],
+  "pythonVersion": "3.10",
+  "pythonPlatform": "Windows",
+  "executionEnvironments": [
+    {
+      "root": "backend",
+      "extraPaths": [
+        ".",
+        "app"
+      ]
+    }
+  ]
+}
